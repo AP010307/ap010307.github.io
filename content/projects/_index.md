@@ -1,5 +1,8 @@
 ---
 title: "Projects"
-summary: "A collection of my engineering and software projects."
-layout: "list"
+date: 2025-03-15
+draft: false
+tags: ["hugo", "PaperMod"]
 ---
+
+# Details of my projects
