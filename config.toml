@@ -59,7 +59,7 @@ publishDir = "docs"
   [[menu.main]]
     identifier = "resume"
     name = "Resume"
-    url = "/electrical_Engineering_resume__newest.pdf"
+    url = "docs/Electrical_Engineering_resume__newest.pdf"
     weight = 3
 
   [[menu.main]]
