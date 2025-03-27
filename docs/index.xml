@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Mar 2025 16:46:16 -0800</lastBuildDate>
+    <lastBuildDate>Sat, 15 Mar 2025 14:31:55 -0700</lastBuildDate>
     <atom:link href="https://ap010307.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First friend to leave the server</title>
@@ -89,6 +89,13 @@
 &lt;p&gt;This project was my introduction to PCB design using KiCad. Provided with a schematics, I created a square-wave signal generator that its frequency and gain can be adjusted using multiple potentiometers.&lt;/p&gt;
 &lt;h1 id=&#34;objective&#34;&gt;Objective&lt;/h1&gt;
 &lt;p&gt;The objective of this project was to learn how to design a PCB using KiCad and to understand the basic concepts of signal generation. The project also taught me to use different circuit testing equpments such as oscilloscope and multimeter. Lastly, I was introduced to SMD components, bill of materials and how to solder these components onto the PCB.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>https://ap010307.github.io/portfolio/projects/</link>
+      <pubDate>Sat, 15 Mar 2025 14:31:55 -0700</pubDate>
+      <guid>https://ap010307.github.io/portfolio/projects/</guid>
+      <description>&lt;h2 id=&#34;details-of-my-projects&#34;&gt;Details of my projects&lt;/h2&gt;</description>
     </item>
     <item>
       <title>About</title>
