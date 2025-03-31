@@ -171,7 +171,7 @@ Reflow soldering was used to assemble surface-mounted-technology (SMT) devices o
 </div>
 
   <div class="post-content"><p><a href="https://github.com/harryHatesCPEN211/ELEC291_project_1">🔗 View on GitHub</a></p>
-<p><img alt="Reflow Oven Schematics" loading="lazy" src="/image/Project1_Schematics.png"></p>
+<p><img alt="Reflow Oven Schematics" loading="lazy" src="/image/project1_schematics.png"></p>
 <h1 id="overview">Overview<a hidden class="anchor" aria-hidden="true" href="#overview">#</a></h1>
 <p>I spearheaded a group of five people in an ELEC 291 project that utilized Intel&rsquo;s 8051 microcontroller and assembly language to implement reflow soldering using a toaster oven.</p>
 <h1 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h1>
@@ -335,20 +335,20 @@ Reflow soldering was used to assemble surface-mounted-technology (SMT) devices o
   </tbody>
 </table>
 <p>I was responsible for designing the hardware and also assisted the firmware group in debugging the finite state machine and display logic. With the OP07 op-amp&rsquo;s maximum gain of 330, the challenge lay in balancing gain and noise. Maximizing gain caused noise amplification, whereas reducing gain made the signal too weak for the microcontroller to read. Selecting resistor values to achieve the desired gain was also challenging. Using a high-value resistor reduced thermal noise but introduced offset error and vice versa. Ultimately, I opted for a gain of 250, using a <strong>240KΩ resistor</strong> and a <strong>1KΩ resistor</strong>.</p>
-<p><img alt="Op-amp and resistor configuration" loading="lazy" src="/image/IMG_6DEDEBA132AB-1.jpeg"></p>
+<p><img alt="Op-amp and resistor configuration" loading="lazy" src="/image/img_6dedeba132ab-1.jpeg"></p>
 <p>The OP07 required a dual power supply of ±5V. The LMC7660 was used to convert the 5V from the microcontroller into ±5V with the help of electrolytic capacitors.</p>
-<p><img alt="LMC7660" loading="lazy" src="/image/IMG_50D9E9E52711-1.jpeg"></p>
+<p><img alt="LMC7660" loading="lazy" src="/image/img_50d9e9e52711-1.jpeg"></p>
 <p>The system also included an LM335 temperature sensor, which calculated the ambient temperature. A reference voltage of 4.096V, provided by the LM4040, was required. The LM335 was connected to the microcontroller via the bus pins of the LCD.</p>
-<p><img alt="LM335" loading="lazy" src="/image/IMG_0AED9FB7C357-1.jpeg"></p>
+<p><img alt="LM335" loading="lazy" src="/image/img_0aed9fb7c357-1.jpeg"></p>
 <p>There were five push buttons used to control the reflow oven. The buttons were connected to the microcontroller via a pull-up resistor. The microcontroller read the state of the buttons and updated the display accordingly. They all shared pin 10 and were connected to the bus pins of the LCD. These buttons controlled the soak temperature, soak time, reflow temperature, reflow time, and start/stop functionality.</p>
-<p><img alt="Push_buttons" loading="lazy" src="/image/Screenshot_2025-03-11_at_2.37.59AM.png"></p>
+<p><img alt="Push_buttons" loading="lazy" src="/image/screenshot_2025-03-11_at_2.37.59am.png"></p>
 <p>A piezo speaker was connected to an NFET and controlled by the microcontroller. The microcontroller sent signals to turn the NFET on and off, causing the speaker to beep whenever the reflow oven transitioned into a new state.</p>
-<p><img alt="Piezospeaker" loading="lazy" src="/image/Screenshot_2025-03-11_at_7.05.34_PM.png"></p>
+<p><img alt="Piezospeaker" loading="lazy" src="/image/screenshot_2025-03-11_at_7.05.34_pm.png"></p>
 <p>Finally, the microcontroller generated a PWM signal to drive a solid-state relay, which controlled the toaster oven based on the reflow profile.</p>
-<p><img alt="SSR" loading="lazy" src="/image/IMG_6C528E00D089-1.jpeg"></p>
+<p><img alt="SSR" loading="lazy" src="/image/img_6c528e00d089-1.jpeg"></p>
 <h2 id="software">Software<a hidden class="anchor" aria-hidden="true" href="#software">#</a></h2>
 <p>The software was written in Assembly using the 8051 instruction set. It handled temperature readings from the thermocouple and LM335, updated the display, and controlled the reflow profile. The software was divided into three main parts: the finite state machine, the display logic, and the temperature reading logic.</p>
-<p><img alt="Flowchart" loading="lazy" src="/image/Software_highlevel.png"></p>
+<p><img alt="Flowchart" loading="lazy" src="/image/software_highlevel.png"></p>
 <p>Since the reflow soldering profile had four states—idle, soak, reflow, and cooldown—the finite state machine transitioned between these states based on elapsed time and oven temperature. The display logic updated the LCD based on the current reflow oven state. The temperature reading logic measured temperatures from the thermocouple and LM335 and updated the display accordingly.</p>
 <p>Using Timer 0 and Timer 1, the microcontroller tracked elapsed time and oven temperature. If the oven failed to reach 50℃ within the first 60 seconds, the microcontroller shut off the toaster oven and reset to the idle state.</p>
 <p>To create the PWM signal, Timer 2 generated a duty cycle based on the reflow profile (0% for idle, 100% for soak, 20% for reflow, and 0% for cooldown). The PWM signal controlled the solid-state relay, turning the toaster oven on and off.</p>
@@ -363,8 +363,8 @@ Reflow soldering was used to assemble surface-mounted-technology (SMT) devices o
   </thead>
   <tbody>
       <tr>
-          <td><img alt="Ideal Temperature" loading="lazy" src="/image/Ideal_temperature.png"></td>
-          <td><img alt="Actual Temperature" loading="lazy" src="/image/Temperature_plot.png"></td>
+          <td><img alt="Ideal Temperature" loading="lazy" src="/image/ideal_temperature.png"></td>
+          <td><img alt="Actual Temperature" loading="lazy" src="/image/temperature_plot.png"></td>
       </tr>
   </tbody>
 </table>
