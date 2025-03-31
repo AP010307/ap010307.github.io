@@ -38,7 +38,7 @@ The hardware only required the De1-SoC board.
 ## SystemVerilog
 The SystemVerilog design was divided into two parts: the datapath and the finite state machine controller.
 ### Datapath
-![Datapath](datapath_diagram.png)
+{{< figure src="datapath_diagram.png" alt="Datapath" >}}
 The datapath consisted of the following components:
 - **A 16-bit ALU**.
 - **8 16-bit registers**.
@@ -46,7 +46,7 @@ The datapath consisted of the following components:
 #### ALU
 | ***ALU's lab 5*** | ***ALU lab 6*** |
 |------------------------------|--------------------------------|
-![ALU](alu_image.png)|![ALU_lab6](alu_image_upgrade.png)
+{{< figure src="alu_image.png" alt="ALU" >}}|{{< figure src="alu_image_upgrade.png" alt="ALU_lab6" >}}
 
 First, I declared ALU macros that represented 2-bit binary value. Then, I created a 16-bit ALU that could perform addition, subtraction, multiplication, and division.
 | Value on ALUop input | Operation |
@@ -58,11 +58,11 @@ First, I declared ALU macros that represented 2-bit binary value. Then, I create
 #### Register File
 | ***Register's diagram*** | ***Register's declaration*** |
 |------------------------------|--------------------------------|
-| ![Diagram](regfile_diagram.png) | ![Declare](regfile_declare.png) |
+| {{< figure src="regfile_diagram.png" alt="Diagram" >}} | {{< figure src="regfile_declare.png" alt="Declare" >}} |
 For the register file, it took input data through a multiplexer which selected whether data was coming from the output or the external switches. It contained two 3-8 decoder that one selected the register to write to while the other chose which register's output to continue. 
 
 #### Shifter
-![Shifter](shifter_declare.png)
+{{< figure src="shifter_declare.png" alt="Shifter" >}}
 The shifter was used to shift the data to the left or right by 1 bit. It was used in the multiplication and division operations.
 | shift | Operation |
 |----------|---------------------------|
@@ -73,16 +73,16 @@ The shifter was used to shift the data to the left or right by 1 bit. It was use
 
 #### Datapath
  ***Datapath's code*** |
-|![Datapath_code](datapath_code_1st.png)|![Datapath_code](datapath_code_2nd.png)|
+|{{< figure src="datapath_code_1st.png" alt="Datapath_code" >}}|{{< figure src="datapath_code_2nd.png" alt="Datapath_code" >}}|
 |-----------------------------------------------|-----------------------------------------------|
-![Datapath_code](datapath_code_3rd.png)
+{{< figure src="datapath_code_3rd.png" alt="Datapath_code" >}}
 
 The datapath file called all the components and connected them together. It took the input data from the ALU, the register file, and the shifter. It also took the input data from the memory and the output data from the memory. The datapath was controlled by the FSM controller.
 
 ## Finite State Machine Controller
-| ![FSM](fsm_1st.png) | ![FSM](fsm_2nd.png) |
+| {{< figure src="fsm_1st.png" alt="FSM" >}} | {{< figure src="fsm_2nd.png" alt="FSM" >}} |
 |------------------------------|--------------------------------|
-| ![FSM](fsm_3rd.png) | ![FSM](fsm_4th.png) |
+| {{< figure src="fsm_3rd.png" alt="FSM" >}} | {{< figure src="fsm_4th.png" alt="FSM" >}} |
 
 Instead of manually controlling the datapath, the FSM controller was used to control the datapath. The FSM controller was designed to have 6 states:
 - **WAIT**: The initial state of the machine.
@@ -101,11 +101,11 @@ A simple instructional file that stored the current instruction according to the
 ### Instructional Decoder 
 | ***Decoder's declaration*** | ***Cont*** |
 |------------------------------|--------------------------------|
-| ![Diagram](instructional_decoder.png) | ![Declare](/instructional_decoder.png) |
+| {{< figure src="instructional_decoder.png" alt="Diagram" >}} | {{< figure src="/instructional_decoder.png" alt="Declare" >}} |
 
 | ***Decoder's declaration*** |
 |------------------------------|
-| ![Diagram](instruction_decoder_diagram.png) |
+| {{< figure src="instruction_decoder_diagram.png" alt="Diagram" >}} |
 
 One of the most important components of the FSM controller was the decoder. The decoder took the 16-bit current instruction and and a 2 bit select for the multiplexer to output MOVE instructions and ALU operations. The 16-bit instruction was divided into 4 parts: the opcode, the destination register, the source register, and the immediate value. The opcode was used to determine the operation to be performed. The destination register was used to determine the register to write to. The source register was used to determine the register to read from. The immediate value was used to store the immediate value to be used in the operation.
 

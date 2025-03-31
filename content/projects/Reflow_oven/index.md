@@ -10,7 +10,7 @@ weight: 1
 
 [🔗 View on GitHub](https://github.com/harryHatesCPEN211/ELEC291_project_1)
 
-![Reflow Oven Schematics](project1_schematics.png)
+{{< figure src="project1_schematics.png" alt="Reflow Oven Schematics" >}}
 
 # Overview
 I spearheaded a group of five people in an ELEC 291 project that utilized Intel's 8051 microcontroller and assembly language to implement reflow soldering using a toaster oven.
@@ -74,32 +74,32 @@ The hardware consisted of the following components:
 
 I was responsible for designing the hardware and also assisted the firmware group in debugging the finite state machine and display logic. With the OP07 op-amp's maximum gain of 330, the challenge lay in balancing gain and noise. Maximizing gain caused noise amplification, whereas reducing gain made the signal too weak for the microcontroller to read. Selecting resistor values to achieve the desired gain was also challenging. Using a high-value resistor reduced thermal noise but introduced offset error and vice versa. Ultimately, I opted for a gain of 250, using a **240KΩ resistor** and a **1KΩ resistor**.
 
-![Op-amp and resistor configuration](img_6dedeba132ab-1.jpeg)
+{{< figure src="img_6dedeba132ab-1.jpeg" alt="Op-amp and resistor configuration" >}}
 
 The OP07 required a dual power supply of ±5V. The LMC7660 was used to convert the 5V from the microcontroller into ±5V with the help of electrolytic capacitors.
 
-![LMC7660](img_50d9e9e52711-1.jpeg)
+{{< figure src="img_50d9e9e52711-1.jpeg" alt="LMC7660" >}}
 
 The system also included an LM335 temperature sensor, which calculated the ambient temperature. A reference voltage of 4.096V, provided by the LM4040, was required. The LM335 was connected to the microcontroller via the bus pins of the LCD.
 
-![LM335](img_0aed9fb7c357-1.jpeg)
+{{< figure src="img_0aed9fb7c357-1.jpeg" alt="LM335" >}}
 
 There were five push buttons used to control the reflow oven. The buttons were connected to the microcontroller via a pull-up resistor. The microcontroller read the state of the buttons and updated the display accordingly. They all shared pin 10 and were connected to the bus pins of the LCD. These buttons controlled the soak temperature, soak time, reflow temperature, reflow time, and start/stop functionality.
 
-![Push_buttons](screenshot_2025-03-11_at_2.37.59am.png)
+{{< figure src="screenshot_2025-03-11_at_2.37.59am.png" alt="Push_buttons" >}}
 
 A piezo speaker was connected to an NFET and controlled by the microcontroller. The microcontroller sent signals to turn the NFET on and off, causing the speaker to beep whenever the reflow oven transitioned into a new state.
 
-![Piezospeaker](screenshot_2025-03-11_at_7.05.34_pm.png)
+{{< figure src="screenshot_2025-03-11_at_7.05.34_pm.png" alt="Piezospeaker" >}}
 
 Finally, the microcontroller generated a PWM signal to drive a solid-state relay, which controlled the toaster oven based on the reflow profile.
 
-![SSR](img_6c528e00d089-1.jpeg)
+{{< figure src="img_6c528e00d089-1.jpeg" alt="SSR" >}}
 
 ## Software
 The software was written in Assembly using the 8051 instruction set. It handled temperature readings from the thermocouple and LM335, updated the display, and controlled the reflow profile. The software was divided into three main parts: the finite state machine, the display logic, and the temperature reading logic.
 
-![Flowchart](software_highlevel.png)
+{{< figure src="software_highlevel.png" alt="Flowchart" >}}
 
 Since the reflow soldering profile had four states—idle, soak, reflow, and cooldown—the finite state machine transitioned between these states based on elapsed time and oven temperature. The display logic updated the LCD based on the current reflow oven state. The temperature reading logic measured temperatures from the thermocouple and LM335 and updated the display accordingly.
 
@@ -112,7 +112,7 @@ During reflow soldering, the oven temperature was recorded every 0.5 seconds int
 
 | **Ideal Temperature Profile** | **Actual Temperature Sensor Data** |
 |------------------------------|--------------------------------|
-| ![Ideal Temperature](ideal_temperature.png) | ![Actual Temperature](temperature_plot.png) |
+| {{< figure src="ideal_temperature.png" alt="Ideal Temperature" >}} | {{< figure src="temperature_plot.png" alt="Actual Temperature" >}} |
 
 # Conclusion and Reflection
 This project was a great learning experience in hardware design, firmware development, and real-time data plotting. It was challenging to balance the gain of the OP07 op-amp and to design a reliable finite state machine that transitioned between reflow states accurately. The uses of assembly language and interfacing with hardware components were also new to me and required a lot of debugging, understanding of the fundamentals and attention to detail. Even though our team could not implement original additional features such as adding a soundtrack into the final beep or an automatic oven opening mechanism, we were able to meet all the requirements and create a functional reflow oven.

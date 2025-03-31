@@ -9,12 +9,12 @@ math: true
 ---
 | **Schematics** | **PCB_layout** |
 |------------------------------|--------------------------------|
-| ![Schematics](pcb_schematics.png) | ![PCB layout](pcb_layout.png) |
+| {{< figure src="pcb_schematics.png" alt="Schematics" >}} | {{< figure src="pcb_layout.png" alt="PCB layout" >}} |
 
 
   
   **PCB_3D**  
-  ![PCB 3D](pbc_3d.png)
+  {{< figure src="pbc_3d.png" alt="PCB 3D" >}}
 
 
 # Overview
@@ -65,7 +65,7 @@ The project is purely a hardware project, with the following components:
 ### Setup and Configuration
 The circuit was powered by a 15V barrel jack and being regulated by a LM7805 voltage regulator to output a 5V source for all the ICs.
 
-![Power Supply](ps.png)
+{{< figure src="ps.png" alt="Power Supply" >}}
 
 
 The NE555 timer IC, when put in the astable configuration, had a default frequency of the output signal given by:
@@ -74,20 +74,20 @@ The NE555 timer IC, when put in the astable configuration, had a default frequen
 
 where R_B is a 100k ohm potentiometer, R_A is a 10k ohm resistor, and C is equal 10 microFarad. This allows the output signal to range from 1.2Hz to 7.2Hz. 
 
-![NE555 Timer](ne_555.png)
+{{< figure src="ne_555.png" alt="NE555 Timer" >}}
 
 The output signal is then amplified by the AD8039ARZ op-amp, which is powered by a 5V and -5V source from the MAX889SESA+ voltage regulator. The gain of the op-amp can be adjusted by two \( 100k\Omega \) potentiometers, one of them is connected to the inverting input of U2A and the other one to the inverting input of U2B. These potentiometer configurations allows the output signal to range from 0V to 5V.
 
 
 The last 100k\Omega potentiometer is used to adjust the offset of the output signal, which allows the output signal to range from -2.5V to 2.5V.
-![AD8039ARZ Op-amp](ad8039.png)
+{{< figure src="ad8039.png" alt="AD8039ARZ Op-amp" >}}
 
 There are test points that would allow the user to test the effects of the potentiometers on the output signal. The test points are connected to the output of the NE555 timer IC, the output of the AD8039ARZ op-amp, and the output of the MAX889SESA+ voltage regulator.
 
 # Results
 The PCB was hand-soldered and tested using an oscilloscope.
 
-![PCB_soldered](pxl_20240627_014233494_original.jpg)
+{{< figure src="pxl_20240627_014233494_original.jpg" alt="PCB_soldered" >}}
 The output signal was a square wave signal that can be adjusted using the potentiometers. The gain and offset of the signal can be adjusted to the user's preference. However, there was some issues with the output signal where the gain and offset potentiometers were not working as intended.
 
 # Conclusion
