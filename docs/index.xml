@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Allen Pham</title>
-    <link>http://localhost:1313/portfolio/</link>
+    <link>https://ap010307.github.io/portfolio/</link>
     <description>Recent content on Allen Pham</description>
     <image>
       <title>Allen Pham</title>
-      <url>http://localhost:1313/portfolio/logo.png</url>
-      <link>http://localhost:1313/portfolio/logo.png</link>
+      <url>https://ap010307.github.io/portfolio/logo.png</url>
+      <link>https://ap010307.github.io/portfolio/logo.png</link>
     </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 14 Mar 2025 16:46:16 -0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ap010307.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First friend to leave the server</title>
-      <link>http://localhost:1313/portfolio/blogs/first_friend_to_leave_the_server/</link>
+      <link>https://ap010307.github.io/portfolio/blogs/first_friend_to_leave_the_server/</link>
       <pubDate>Fri, 14 Mar 2025 16:46:16 -0800</pubDate>
-      <guid>http://localhost:1313/portfolio/blogs/first_friend_to_leave_the_server/</guid>
+      <guid>https://ap010307.github.io/portfolio/blogs/first_friend_to_leave_the_server/</guid>
       <description>&lt;p&gt;When you attended your first friend&amp;rsquo;s funeral, you questioned yourself &amp;ldquo;Have I done enough for what you believe ?&amp;rdquo;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Reflow Oven Controller</title>
-      <link>http://localhost:1313/portfolio/projects/reflow_oven/</link>
+      <link>https://ap010307.github.io/portfolio/projects/reflow_oven/</link>
       <pubDate>Sat, 08 Mar 2025 16:46:16 -0800</pubDate>
-      <guid>http://localhost:1313/portfolio/projects/reflow_oven/</guid>
+      <guid>https://ap010307.github.io/portfolio/projects/reflow_oven/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/harryHatesCPEN211/ELEC291_project_1&#34;&gt;🔗 View on GitHub&lt;/a&gt;&lt;/p&gt;
 &lt;figure&gt;
     &lt;img loading=&#34;lazy&#34; src=&#34;project1_schematics.png&#34;
@@ -38,16 +38,16 @@
     </item>
     <item>
       <title>Як гартувалася сталь !,</title>
-      <link>http://localhost:1313/portfolio/blogs/%D1%8F%D0%BA-%D0%B3%D0%B0%D1%80%D1%82%D1%83%D0%B2%D0%B0%D0%BB%D0%B0%D1%81%D1%8F-%D1%81%D1%82%D0%B0%D0%BB%D1%8C-/</link>
+      <link>https://ap010307.github.io/portfolio/blogs/%D1%8F%D0%BA-%D0%B3%D0%B0%D1%80%D1%82%D1%83%D0%B2%D0%B0%D0%BB%D0%B0%D1%81%D1%8F-%D1%81%D1%82%D0%B0%D0%BB%D1%8C-/</link>
       <pubDate>Fri, 14 Mar 2025 16:46:16 -0800</pubDate>
-      <guid>http://localhost:1313/portfolio/blogs/%D1%8F%D0%BA-%D0%B3%D0%B0%D1%80%D1%82%D1%83%D0%B2%D0%B0%D0%BB%D0%B0%D1%81%D1%8F-%D1%81%D1%82%D0%B0%D0%BB%D1%8C-/</guid>
+      <guid>https://ap010307.github.io/portfolio/blogs/%D1%8F%D0%BA-%D0%B3%D0%B0%D1%80%D1%82%D1%83%D0%B2%D0%B0%D0%BB%D0%B0%D1%81%D1%8F-%D1%81%D1%82%D0%B0%D0%BB%D1%8C-/</guid>
       <description>&lt;p&gt;A piece of steel is dunked in nitrogen, then shattered into a million pieces. Are you strong enough?&lt;/p&gt;</description>
     </item>
     <item>
       <title>UBC Supermileage Vehicle Simulation</title>
-      <link>http://localhost:1313/portfolio/projects/supermileage_sim/ubc_supermileage/</link>
+      <link>https://ap010307.github.io/portfolio/projects/supermileage_sim/ubc_supermileage/</link>
       <pubDate>Fri, 14 Feb 2025 16:46:16 -0800</pubDate>
-      <guid>http://localhost:1313/portfolio/projects/supermileage_sim/ubc_supermileage/</guid>
+      <guid>https://ap010307.github.io/portfolio/projects/supermileage_sim/ubc_supermileage/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;%22https://github.com/AP010307/UBC-Supermileage-Vehicle-Simulation.git%22&#34;&gt;🔗 View on GitHub&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
 &lt;p&gt;A MATLAB project looking for the best racing strategy for the UBC Supermileage team.&lt;/p&gt;
@@ -56,9 +56,9 @@
     </item>
     <item>
       <title>RISC Machine</title>
-      <link>http://localhost:1313/portfolio/projects/risc/</link>
+      <link>https://ap010307.github.io/portfolio/projects/risc/</link>
       <pubDate>Fri, 14 Feb 2025 16:46:16 -0800</pubDate>
-      <guid>http://localhost:1313/portfolio/projects/risc/</guid>
+      <guid>https://ap010307.github.io/portfolio/projects/risc/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/AP010307/CPEN_211_RSIC.git&#34;&gt;🔗 View on GitHub&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;A SystemVerilog and ARM assembly project that creates a simple computer with basic arithmetics and memories.&lt;/p&gt;
 &lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
@@ -68,9 +68,9 @@
     </item>
     <item>
       <title>Signal Generator</title>
-      <link>http://localhost:1313/portfolio/projects/sig_gen/</link>
+      <link>https://ap010307.github.io/portfolio/projects/sig_gen/</link>
       <pubDate>Sat, 08 Mar 2025 16:46:16 -0800</pubDate>
-      <guid>http://localhost:1313/portfolio/projects/sig_gen/</guid>
+      <guid>https://ap010307.github.io/portfolio/projects/sig_gen/</guid>
       <description>&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
@@ -108,9 +108,9 @@
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:1313/portfolio/about/</link>
+      <link>https://ap010307.github.io/portfolio/about/</link>
       <pubDate>Mon, 10 Mar 2025 14:31:55 -0700</pubDate>
-      <guid>http://localhost:1313/portfolio/about/</guid>
+      <guid>https://ap010307.github.io/portfolio/about/</guid>
       <description>&lt;h2 id=&#34;this-is-my-portfolio&#34;&gt;This is my portfolio&lt;/h2&gt;
 &lt;p&gt;This page is sharing my projects, blogs, and other things I am working on.&lt;/p&gt;
 &lt;p&gt;I love working on interdisciplinary projects and looking for new solutions combining different fields. Outside of engineering, I love racing, specifically sim racing, karting. I am also a big fan of Formula 1 and looking for opportunities to work in the motorsport industry.&lt;/p&gt;</description>
