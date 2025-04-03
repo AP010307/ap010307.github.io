@@ -14,7 +14,7 @@ math: true
 
   
   **PCB_3D**  
-  {{< figure src="pbc_3d.png" alt="PCB 3D" >}}
+  {{< figure src="pcb_3d.png" alt="PCB 3D" >}}
 
 
 # Overview
