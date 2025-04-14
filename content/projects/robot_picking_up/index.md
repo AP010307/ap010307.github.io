@@ -1,26 +1,20 @@
 ---
-title: "Reflow Oven Controller"
-date: "2025-03-08T16:46:16-08:00"
-draft: false
+title: "Coin picking robot"
 tags: ["Altium", "Assembly", "Circuit Design", "Python"]
 categories: ["Projects"]
 github: "https://github.com/harryHatesCPEN211/ELEC291_project_1"
-weight: 2
+weight: 1
 ---
 
-[🔗 View on GitHub](https://github.com/harryHatesCPEN211/ELEC291_project_1)
-
-{{< figure src="project1_schematics.png" alt="Reflow Oven Schematics" >}}
-
 # Overview
-I spearheaded a group of five people in an ELEC 291 project that utilized Intel's 8051 microcontroller and assembly language to implement reflow soldering using a toaster oven.
+I spearheaded a group of five people in an ELEC 291 project that the EFM8LB1 and ATMega32P microcontrollers to create a robot that is able to pick up 20 coins.
 
 # Introduction
-Reflow soldering was used to assemble surface-mounted-technology (SMT) devices onto printed circuit boards (PCBs). The process utilized solder paste (a mixture of solder flux and pellets with adhesive properties) to attach micro-components onto the PCBs. Once components were moderately secured on the pads, the board was placed into an oven, which was gradually heated according to a predetermined soldering profile. This profile included a customizable reflow time, reflow temperature, and soak time. During the heating process, the flux was activated, and the solder paste melted, soldering the components onto the PCB.
+This project is the ultimatum of my ELEC 291 course, where my team was tasked with creating a robot that could pick up 20 coins. The robot was designed to be able to stay within a perimeter powered by AC signal while detecting and picking up coins using multipl solenoids. 
 
 # Objective
 
-This project investigated and executed all aspects of reflow soldering: design, hardware, software, testing, and application. The following requirements were strictly followed:
+The goal of this project is to build, program, and test a robot, capable of detecting and pick up coins, both autonomously and manually:    
 
 - **Software**  
   - The software was written in Assembly using the 8051 instruction set.  

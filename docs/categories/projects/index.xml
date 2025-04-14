@@ -14,6 +14,16 @@
     <lastBuildDate>Sat, 08 Mar 2025 16:46:16 -0800</lastBuildDate>
     <atom:link href="https://ap010307.github.io/portfolio/categories/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Coin picking robot</title>
+      <link>https://ap010307.github.io/portfolio/projects/robot_picking_up/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ap010307.github.io/portfolio/projects/robot_picking_up/</guid>
+      <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
+&lt;p&gt;I spearheaded a group of five people in an ELEC 291 project that the EFM8LB1 and ATMega32P microcontrollers to create a robot that is able to pick up 20 coins.&lt;/p&gt;
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;This project is the ultimatum of my ELEC 291 course, where my team was tasked with creating a robot that could pick up 20 coins. The robot was designed to be able to stay within a perimeter powered by AC signal while detecting and picking up coins using multipl solenoids.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Reflow Oven Controller</title>
       <link>https://ap010307.github.io/portfolio/projects/reflow_oven/</link>
       <pubDate>Sat, 08 Mar 2025 16:46:16 -0800</pubDate>
@@ -30,17 +40,6 @@
 &lt;p&gt;Reflow soldering was used to assemble surface-mounted-technology (SMT) devices onto printed circuit boards (PCBs). The process utilized solder paste (a mixture of solder flux and pellets with adhesive properties) to attach micro-components onto the PCBs. Once components were moderately secured on the pads, the board was placed into an oven, which was gradually heated according to a predetermined soldering profile. This profile included a customizable reflow time, reflow temperature, and soak time. During the heating process, the flux was activated, and the solder paste melted, soldering the components onto the PCB.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>UBC Supermileage Vehicle Simulation</title>
-      <link>https://ap010307.github.io/portfolio/projects/supermileage_sim/ubc_supermileage/</link>
-      <pubDate>Fri, 14 Feb 2025 16:46:16 -0800</pubDate>
-      <guid>https://ap010307.github.io/portfolio/projects/supermileage_sim/ubc_supermileage/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;%22https://github.com/AP010307/UBC-Supermileage-Vehicle-Simulation.git%22&#34;&gt;🔗 View on GitHub&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
-&lt;p&gt;A MATLAB project looking for the best racing strategy for the UBC Supermileage team.&lt;/p&gt;
-&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;In the motorsport world, the more time a driver spends on the track, the better their throttle control, braking point and racing line become. They also develop their own racing style that not only suits the car but also their racing philosophy. Two great examples are Max Verstappen late braking and preference for oversteering and late apex, and Lewis Hamilton&amp;rsquo;s smooth driving style and preference for early apex. Nevertheless, the driver&amp;rsquo;s racing style is not the only factor that affects the car&amp;rsquo;s performance. The car&amp;rsquo;s setup, the track&amp;rsquo;s condition, and the weather also play a significant role in determining the car&amp;rsquo;s performance and most importantly, the racing line.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>RISC Machine</title>
       <link>https://ap010307.github.io/portfolio/projects/risc/</link>
       <pubDate>Fri, 14 Feb 2025 16:46:16 -0800</pubDate>
@@ -51,6 +50,17 @@
 &lt;p&gt;This project is 3 labs combined into one project for CPEN 211, where we designed a  reduced set instruction computer (RISC) machine using SystemVerilog and ARM assembly on a De1-SoC board. The RISC machine is capable of performing basic arithmetic operations and memory operations.&lt;/p&gt;
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;The project was divided into two parts: the SystemVerilog part and the ARM assembly part. The SystemVerilog part was to design the RISC machine using a finite state machine (FSM) and the ARM assembly part was to write a program that runs on the RISC machine. The RISC machine was designed to have a 16-bit data bus, 16-bit address bus, 16-bit registers, and 16-bit memory. The machine was capable of performing basic arithmetic operations such as addition, subtraction, multiplication, and division. It was also capable of performing memory operations such as load and store.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>UBC Supermileage Vehicle Simulation</title>
+      <link>https://ap010307.github.io/portfolio/projects/supermileage_sim/ubc_supermileage/</link>
+      <pubDate>Fri, 14 Feb 2025 16:46:16 -0800</pubDate>
+      <guid>https://ap010307.github.io/portfolio/projects/supermileage_sim/ubc_supermileage/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;%22https://github.com/AP010307/UBC-Supermileage-Vehicle-Simulation.git%22&#34;&gt;🔗 View on GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
+&lt;p&gt;A MATLAB project looking for the best racing strategy for the UBC Supermileage team.&lt;/p&gt;
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;In the motorsport world, the more time a driver spends on the track, the better their throttle control, braking point and racing line become. They also develop their own racing style that not only suits the car but also their racing philosophy. Two great examples are Max Verstappen late braking and preference for oversteering and late apex, and Lewis Hamilton&amp;rsquo;s smooth driving style and preference for early apex. Nevertheless, the driver&amp;rsquo;s racing style is not the only factor that affects the car&amp;rsquo;s performance. The car&amp;rsquo;s setup, the track&amp;rsquo;s condition, and the weather also play a significant role in determining the car&amp;rsquo;s performance and most importantly, the racing line.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Signal Generator</title>

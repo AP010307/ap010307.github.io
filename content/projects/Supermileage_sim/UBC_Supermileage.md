@@ -5,7 +5,7 @@ draft: false
 tags: ["MATLAB", "UBC", "Database"]
 categories: ["Projects"]
 github: "https://github.com/AP010307/UBC-Supermileage-Vehicle-Simulation.git"
-weight: 2
+weight: 3
 ---
 
 [🔗 View on GitHub]("https://github.com/AP010307/UBC-Supermileage-Vehicle-Simulation.git")
