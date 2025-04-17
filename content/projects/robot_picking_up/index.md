@@ -5,7 +5,7 @@ categories: ["Projects"]
 github: "https://github.com/harryHatesCPEN211/ELEC291_project_1"
 weight: 1
 ---
-
+{{< figure src="top_view.jpg" alt="Robot and Remote" >}}
 # Overview
 I spearheaded a group of five people in an ELEC 291 project that the EFM8LB1 and ATMega32P microcontrollers to create a robot that is able to pick up 20 coins.
 
@@ -16,102 +16,234 @@ This project is the ultimatum of my ELEC 291 course, where my team was tasked wi
 
 The goal of this project is to build, program, and test a robot, capable of detecting and pick up coins, both autonomously and manually:    
 
-- **Software**  
-  - The software was written in Assembly using the 8051 instruction set.  
-  - Data validation and plotting were performed in real-time using Python Matplotlib.  
+- The project must utilize two microcontrollers (one for the robot and one for the remote). The two microcontrollers must be from different families. The list of MCUs included in the project 2 kit is as below:
 
-- **Reflow Oven Requirements**  
-  - The oven measured temperatures between **25℃ and 240℃** with **±3℃ accuracy**.  
+    - **EFM8LB12** (C8051Fxxx family)
+    - **ATMega328P** (AVR family)
+    - **MSP430G2553** (MSP430 family)
+    - **PIC32MX130** (PIC family)
+    - **LPC824** (ARM Cortex-M0 family)
 
-- **User Interface and Feedback**  
-  - Customizable parameters via pushbuttons:  
-    - Reflow temperature  
-    - Reflow time  
-    - Soak temperature  
-    - Soak time  
-  - The LCD accurately displayed and updated:  
-    - Reflow states  
-    - Oven/ambient temperature  
-    - Running time (both total elapsed time and time at each state) throughout the reflow process based on user input  
-  - A Start/Stop button was used for initiating and canceling the reflow process at any time.  
 
-- **Automatic Abort on Error**  
-  - The reflow process terminated under the following conditions:  
-    - Improper thermocouple placement in the oven.  
-    - If the oven failed to reach at least **50℃ within the first 60 seconds** of operation.  
+- **Both the robot and controller must be battery operated (AA and 9V)**
+
+- **Metal detection**: using a 1mH conductor coil and other relevant electrical components to construct a Colpitts Oscillator, which will act as a metal detector. The robot must be able to detect all Canadian coins in circulation.
+
+- Coin-picking mechanism consists of two micro servo motors and an electromagnet. The robot must be able to pick up all Canadian coins in circulation and deposit them in a container situated at the front of the robot.
+- **The robot must be programmed in C**
+- **Perimeter detection**: In automatic mode, the robot must operate within a 1m x 0.5m perimeter. The perimeter consists of a long rectangular wire carrying an AC signal either from a function generator or a LM-555 timer circuit. The robot must be able to detect and stay within the perimeter at any given point throughout the automatic process.
+- **Automatic mode**: The robot must be able to autonomously pick up 20 coins scattered randomly within the perimeter, without having four wheels leaving said perimeter. Upon completion, the robot stopped for further commands.
+- **Manual mode**: The robot must be able to pick up coins using a remote control. The remote control must be able to control the robot's movement and coin-picking mechanism. The remote control must also be able to stop the robot at any given point.
+- **Remote control**: must include an LCD to display the signal “strength” coming from the coin detector, as well as a speaker that beeps whenever a coin is detected. The pitch of the speaker must correspond to the strength of the signal coming from the metal detector. A joystick is included in the project 2 kit, although any other suitable control methods are also allowed.
+
+# Investigation
+## Idea Generation
+
+Ideas were generated and tackled base on design specifications and objectives listed above. For this project, the keys areas to focus on were:
+-	Succinct integration of two different micro controller families via the C.
+-	Discrete MOSFETs to drive motor logic.
+-	Metal and perimeter detector circuits and logic.
+-	Radio communication via the JDY-40 radio.
+-	Remote must have LCD display, speaker and joystick.
+
+Once project objectives were identified, our group investigated each aspect as a whole and attempted to come up with a solution. Progress was monitored through regular check-ins and testing to ensure succinct integration at the end.
+## Investigation Design
+- Our group’s first objective was deciding which microcontroller unit to use. At the end, we settled with the ATMEGA328P for the controller, and the EFM8 (included in our project 1 kit) for the robot. This decision stemmed from our extensive experience with both MCUs from previous labs and projects, as well as sufficient documentation to both (1)(2).
+- For the metal detector circuit, there are multiple designs available on the Project 2 lecture slides (3). Our team built and tested all the designs and eventually settled the Colpitts Oscillator with discrete CMOS inverter. This set up ensured the most stable frequency output when a coin was detected, as well as being ergonomic enough to be incorporated into the overall robot design.
+
+## Data Collection:
+Dedicated procedures to test the metal and perimeter detector were carried out to ensure succinct operation. 
+ - By placing the robot at various position and distance relative to the perimeter, the “ambient” perimeter frequency of the perimeter detector was consistently found to be around 56600Hz. We set this as our reference value. The frequency picked up by the metal detector when different types of coins were detected varied. Each coin type had a “signature” range of frequency. We later take the average of each coin type’s frequency and their difference from the ambient metal detector frequency (i.e. when nothing is in the vicinity of the metal detector) as a base to drive our metal detector logic.
+
+ {{< figure src="frequency.jpg" alt="Different and mean frequencies of each type of coin" >}}
+
+## Data Synthesis:
+The data found regarding the frequency generated by both the metal and perimeter detector under different conditions served as an important foundation for the robot logic. The accuracy of data collected were further verified using an oscilloscope and excel arithmetic. Via C, we hardcoded the baseline frequency for both detectors. These baseline values directly control the motor that moves the robot around, as well as the coin-picking mechanism (both the servo “arm” and the electromagnet). Once sufficient data was achieved, it all came down to simple arithmetic and if-else statements in the C-language to drive the robot logic.
+
+## Analysis of result:
+Through troubleshooting and calibration, we mitigated errors due to hardware limitations and environmental factors with regards to both the metal and perimeter detector. Our analysis confirmed both apparatuses operating within acceptable error margins and frequency data used as baseline values to drive the robot logic resulted in accurate, consistent and predictable robot behavior. 
 
 # Design
+
 ## Hardware
-The hardware consisted of the following components:
+The robot and remote controller's hardware are as follows:
+#### Robot
+{{< figure src="just_robot.jpg" alt="Robot" >}}
+| No. | Components         | Quantity |
+|-----|--------------------|----------|
+| 1   | EFM8LB12           | 1.0      |
+| 2   | LTV846             | 2.0      |
+| 3   | LM358P             | 1.0      |
+| 4   | LM7805             | 2.0      |
+| 5   | MCP1700            | 1.0      |
+| 6   | FQU8P10            | 5.0      |
+| 7   | FQU13N06LTU        | 6.0      |
+| 8   | 1N4148             | 1.0      |
+| 9   | M8275-ND           | 3.0      |
+| 10  | QRD114             | 2.0      |
+| 11  | MBR150             | 2.0      |
+| 12  | Capacitor 10µF     | 2.0      |
+| 13  | Capacitor 1nF      | 1.0      |
+| 14  | Capacitor 10nF     | 1.0      |
+| 15  | Capacitor 100nF    | 2.0      |
+| 16  | Resistor 330Ω      | 2.0      |
+| 17  | Resistor 1KΩ       | 7.0      |
+| 18  | Resistor 4.7KΩ     | 1.0      |
+| 19  | Resistor 100KΩ     | 4.0      |
+| 20  | Resistor 330KΩ     | 2.0      |
 
-| #  | Components               | Quantity |
+{{< figure src="robot_block_diagram.jpg" alt="Robot block diagram" >}}
+#### Remote controller
+
+{{< figure src="left_view.jpg" alt="Remote" >}}
+
+| No. | Components         | Quantity |
 |----|--------------------------|----------|
-| 1  | OP07CDE4                 | 1        |
-| 2  | LM335                    | 1        |
-| 3  | LMC7660                  | 1        |
-| 4  | LM4040                   | 1        |
-| 5  | K-type thermocouple       | 1        |
-| 6  | 1N4148 diodes             | 6        |
-| 7  | LCM-S01602DTR/M          | 1        |
-| 8  | FQU13N06LTU              | 1        |
-| 9  | CEM-1203(42)             | 1        |
-| 10 | FT230XSR                 | 1        |
-| 11 | Resistor 240KΩ           | 2        |
-| 12 | Resistor 10KΩ            | 1        |
-| 13 | Resistor 2KΩ             | 1        |
-| 14 | Resistor 1KΩ             | 5        |
-| 15 | Resistor 330Ω            | 1        |
-| 16 | Push buttons             | 7        |
-| 17 | Capacitor 10µF           | 1        |
-| 18 | Capacitor 100nF          | 2        |
-| 19 | Capacitor 1000nF         | 2        |
+| 1  | ATMega328P                | 1        |
+| 2  | CEM-1203(42)                   | 1        |
+| 3  | FT230XSR| 1        |
+| 4  | FQU13N06LTU                   | 1        |
+| 5  | JDY-40       | 1        |
+| 6  | MCP1700            | 6        |
+| 7  | 1N4148         | 1        |
+| 8  | QYF-860            | 1        |
+| 9  | Resistor 2KΩ           | 1        |
+| 10 | Resistor 1KΩ                | 1        |
+| 11 | Push buttons          | 2        |
+| 12 | Capacitor 0.1µF            | 1        |
+| 13 | Capacitor 100µF             | 1        |
 
-I was responsible for designing the hardware and also assisted the firmware group in debugging the finite state machine and display logic. With the OP07 op-amp's maximum gain of 330, the challenge lay in balancing gain and noise. Maximizing gain caused noise amplification, whereas reducing gain made the signal too weak for the microcontroller to read. Selecting resistor values to achieve the desired gain was also challenging. Using a high-value resistor reduced thermal noise but introduced offset error and vice versa. Ultimately, I opted for a gain of 250, using a **240KΩ resistor** and a **1KΩ resistor**.
+The robot system was composed of multiple functional components: the robot chassis motor drive, microcontroller, metal and perimeter detectors, wireless radio communication and coin-picking mechanism. Each subsystem was designed by applying principles of embedded systems, A/D design circuit design and power management.
 
-{{< figure src="img_6dedeba132ab-1.jpeg" alt="Op-amp and resistor configuration" >}}
+**Power regulation:**
+- Design approach: The robot uses 4x AA batteries (6V) to power the motors and optocouplers, and a 9V battery regulated to 5V by an LM7805 and an MCP1700 for 3.3V.
 
-The OP07 required a dual power supply of ±5V. The LMC7660 was used to convert the 5V from the microcontroller into ±5V with the help of electrolytic capacitors.
+- LM7805: provides 5V for the EFM8 and sensors.
+- MCP1700: provides 3.3V for JDY-40 and microcontroller
+- Microcontroller system:
+1. Robot MCU – EFM8:
+- 4 PWM digital outputs for motor control, UART + SET pins for JDY-40 communication, 1 digital input for metal detector, and 4 analog inputs for perimeter detectors
+2. Remote MCU – ATMEGA328:
+-	6 digital outputs for LCD, 2 analog inputs for joystick, 1 digital output for speaker, 3 UART pins for JDY-40
+- Motor driver: H-bridge and optocouplers
+-	2 discrete H-bridges, each consists of N-MOS and P-MOS transistors driven by optocouplers (LTV-847), control 2 DC motors by isolation motor power circuitry from the logic-level control.  
+3. Metal detector:
+-	A Colpitts Oscillator with discrete CMOS inverter built from discrete components.
+-	Powered at 5V
+-	The frequency shift when metal is in the vicinity is detected by the MCU
+4. Perimeter detectors:
+-	A peak detector circuit, whose signal is amplified using an Op-Amp.
+-	Two were put perpendicular to each other at the front of the robot chassis for all-direction sensitivity
+-	Output is fed to analog pins of the EFM8 for perimeter detection logic
+5. Radio communication: JDY-40 radio pair
+-	Uses RXD, TXD and SET pins for serial communication between robot and remote.
+-	Powered by 3.3 V and communicates at 9600 baud
+6. Joystick, speaker and LCD (remote):
+-	Joystick: 2-axis analog potentiometer-type joystick connected to 2 analog inputs
+-	LCD: standard 14-bit display driven by MCU digital outputs
+-	Speaker: generates PWM audio cues via a single digital output
+7. Coin-picking mechanism:
+-	Utilizes an electromagnet, servo motors and chassis-integrated basket to pick up metal coins. 
 
-{{< figure src="img_50d9e9e52711-1.jpeg" alt="LMC7660" >}}
 
-The system also included an LM335 temperature sensor, which calculated the ambient temperature. A reference voltage of 4.096V, provided by the LM4040, was required. The LM335 was connected to the microcontroller via the bus pins of the LCD.
 
-{{< figure src="img_0aed9fb7c357-1.jpeg" alt="LM335" >}}
+{{< figure src="remote_block_diagram.jpg" alt="Robot block diagram" >}}
+## Standard Operating Procedure
+Our team began with a structured engineering approach to ensure each subsystem was reliably tested and validated before moving on to subsequent phases of the project. First, we focused on the hardware: we assembled the robot chassis (wheels, motors, coin picking assembly, electromagnet, inductor coils for metal and perimeter detector and basket), and tested the key components—such as the Colpitts oscillator and simple perimeter detector circuits, both microcontrollers (ATMEGA328 and EFM8), JDY-40 radios—to confirm they functioned correctly. By establishing a stable hardware baseline, we minimized the risk of falsely attributing errors during software development to hardware issues.
 
-There were five push buttons used to control the reflow oven. The buttons were connected to the microcontroller via a pull-up resistor. The microcontroller read the state of the buttons and updated the display accordingly. They all shared pin 10 and were connected to the bus pins of the LCD. These buttons controlled the soak temperature, soak time, reflow temperature, reflow time, and start/stop functionality.
+## Requirements and Constraints
 
-{{< figure src="screenshot_2025-03-11_at_2.37.59am.png" alt="Push_buttons" >}}
+We gathered requirements by discussing baseline robot operations based on the outlined requirements, carefully examining the lecture slides and reviewing relevant best practices for designing and operating a multi-pronged system such as this project. From these activities, we identified the following needs and constraints:
+- Streamlined controls during manual mode: the remote (both in terms of hardware and software) must be designed to allow for intuitive and ease of control during manual operations. Steps must be made to always allow for smooth and accurate controls with little interruptions, glitches or delay.
+- 	Optimized robot logic during automatic operation: the robot must be able to perform multiple tasks simultaneously at any given point. This emphasizes the need for a clear logic flow that will allow for optimal performance and ease of debugging.
+- Succinct integration between automatic and manual mode: The operator must be able to switch between automatic and manual mode at any given time. Once in automatic mode, the robot must strictly adhere to the base requirements of this project (i.e. stays withing the perimeter, automatically detects and picks up coin). In addition, after the 20 coins have been picked up during the automatic process, the robot should halt and awaits further instructions from the operator.
+- Relevant Information Display: The remote should (at the bare minimum) display the signal strength based on which type of coins are detected. The signal strength must also be represented by an audio cue via a speaker.
+By systematically identifying and documenting these needs, we ensured our design choices directly addressed user requirements and practical constraints from the outset, helping guide all subsequent design and development efforts.
 
-A piezo speaker was connected to an NFET and controlled by the microcontroller. The microcontroller sent signals to turn the NFET on and off, causing the speaker to beep whenever the reflow oven transitioned into a new state.
+## Solution Generation
+Our team generated solution systematically and took into consideration various methods to address the project’s core requirements. We started by investigating different hardware and software configurations to deal with the robot’s various operational requirements.
+1. **Controls:**
+-   We opted for a simple, 2-axis control via the provided joystick when it comes to the movement of the robot. 
+- The robot arm can be activated by pressing down on the joystick
+- 	Toggling between manual and automatic mode can be done via a pushbutton.
 
-{{< figure src="screenshot_2025-03-11_at_7.05.34_pm.png" alt="Piezospeaker" >}}
+2. **Radio communication between robot and remote:**
+- The ATMEGA328 microcontroller had several built-in ADC input pins, which, when connected to the joystick, can translate its movement into ADC signal and then to voltage. We then programmed the movement of the robot by figuring out the joystick’s “dead zone” and finetuning it to fit with the H-bridge logic, which is then used to move the robot.
 
-Finally, the microcontroller generated a PWM signal to drive a solid-state relay, which controlled the toaster oven based on the reflow profile.
+3. **Software Implementation:**
+-	Our team decided to drive the robot’s logic by imbedding different parameters as presets. From the frequency picked up by the perimeter and metal detector, to the text command signals sent and received from the robot to the remote, we were able to systematically work out the robot’s core operation via simple while loops and if-else statements. This greatly enhanced the efficiency of our workflow, allowed for ease of debugging and optimized the robot’s performance and accuracy.
 
-{{< figure src="img_6c528e00d089-1.jpeg" alt="SSR" >}}
+## Solution Evaluation
+After potential solutions were generated, we evaluated each of them based on accuracy, ease of implementation and how well each idea interacts with one and another in the context of this project. Our evaluation criteria included:
+-	**Hardware reliability**: assuring an ergonomic, neat and efficient circuit design that minimizes errors and allows for easier modification and troubleshooting, as well as succinct integration with software.
+-	**Software efficiency**: ensuring an optimal and logical code flow that once again highlights the need for ease of troubleshooting and modification.
+-	Efficient and predictable robot operation.
+
+
+## Key Findings:
+Although a simple control scheme and clear logic-based code fast-tracked the development of our design, we encountered multiple hiccups regarding to the communication between the robot and remote, which caused unpredictable robot movements, delays and crashes. We eventually narrowed down the cause of the issue: the radio communication received by the robot from the remote were somehow being offset. To be more specific:
+- For example, during manual operation, when the robot is commanded to move forward, the operator moves the joystick forward, which will send a series of signal to the robot, the continuous signal looks something like this: “!FN!FN!….” The software of the robot was supposed to only grab “FN”, which was the valid command for “forward neutral”, but sometimes, it picked up “!F”, which was a false command based on our existing logic. This happened consistently for other commands as well, causing the robot to behave unpredictably. We were able to fix this issue by hardcoding the invalid commands (i.e. “!F”, etc.) as valid instructions. This fixed the issue, while maintaining the overall code efficiency and logic flow:
+
+{{< figure src="codefixing.jpg" alt="Expanding parameter for bug fixing" >}}
 
 ## Software
-The software was written in Assembly using the 8051 instruction set. It handled temperature readings from the thermocouple and LM335, updated the display, and controlled the reflow profile. The software was divided into three main parts: the finite state machine, the display logic, and the temperature reading logic.
+1. **Slave code:**
+-	Servos control: Implemented in Timer5_ISR, creating PWM signals with a 20ms period
+-	Sensor integration:
+  -	Metal detector: coins are detected via frequency shift
+  -	Perimeter detectors: voltage threshold logic triggers a perimeter flag
+-	Movement control:
+  - Motor logic implemented via move_robot() function; encoded movement commands include:
+    - “FN”: Forward (2-wheels moving forward), “BN”: Backwards (2-wheels moving backward), “HL” / “HR”: Hard-left, Hard-right (1-wheel moving forward, other backward), “FL” / “FR”: Gradual-left, Gradual-right (Only one wheel moving forward), BL” / “BR”: Back-left, Back-right (Only one wheel moving backward) and “ST”: Stop
+-	Coin-picking mechanism:
+  -	Servos_magnet() executes a defined range of motion sequence to pick up coins upon detection
+- Wireless communication:
+  - Slave-to-master transmits coin data types (“!DO” - Dollar, “!TW” – 2 Dollars, “!NI” – Nickel, etc.)
+  -	“TO” – toggles between manual and automatic modes
+  -	“PU”  - triggers the coin pick-up sequence
+  - Unknown commands are handled (see Key findings, above)
+- Automatic mode logic:
+	- Moves forward by default
+  -	If perimeter is detected, triggers perimeter_flag, then executes a range of motion moving backward then turning right (the degree of turn is randomized)
+  - If metal is detected, uses frequency difference baseline to:
+-	Detect presence of coin (triggers coinflag); Classify coin types (coin_tier); Broadcast coin classification to master (remote); Activate servos_magnet() to collect coin
+-	Coin collection is hardcoded to 20. After 20 pick-ups, the robot stops. Note that the robot has no means to detect a successful pick-up. It counts every activation of the coin-picking assembly as an attempt.
+- Manual mode logic:
+ - In manual mode, commands are received wirelessly and processed directly
+ - “PU” initiates the pick-up sequence
+ - Directional and stop commands are passed to move_robot()
+2. **Master Code:**
+  - Core features:
+    - Joystick-based control: reads analog joystick input to send movement commands.
+    -	Mode toggle: a pushbutton to toggle between automatic and manual mode by sending “!TO” and waits for “!TD” / “!TF confirmation
+    -	Pressing down on the joystick to send “!PU” to activate the coin collection sequence
+  -	JDY-40 communication:
+    - Sends commands with a “!” header (e.g., “!FN”, “!ST”, “!PU”, etc.)
+    -	Receives coin types identifiers from the robot (“DI”, “QU”, “NI”, “TW”, “DO”) and toggles “TF” from the robot
+  -	Speaker feedback:
+    - Uses Timer0 interrupts to generates tones with different frequencies based on coin type:
+  -	LCD feedback:
+    -	Two-line LCD display:
+        -	Current mode (“Toggle On/Off”) and coin strength
+        -	Display and updates joystick command (e.g. Forward, etc.)
 
-{{< figure src="software_highlevel.png" alt="Flowchart" >}}
+# Solution assessment
+-	The robot was tested over 20 independent trials across various coin placement within the perimeter
+-	Consistency of successful number of coins pick up per run remained at 18-19 out of 20 coins (± 1)
+-	List of performed tests and observations:
 
-Since the reflow soldering profile had four states—idle, soak, reflow, and cooldown—the finite state machine transitioned between these states based on elapsed time and oven temperature. The display logic updated the LCD based on the current reflow oven state. The temperature reading logic measured temperatures from the thermocouple and LM335 and updated the display accordingly.
+| Test                             | Expected Outcome                             | Observed Outcome                                                                 | Pass/Fail        |
+|----------------------------------|----------------------------------------------|----------------------------------------------------------------------------------|------------------|
+| Coin detection (static and moving) | Coin correctly identified and picked up      | Coin detection is 100% functional, but hardcoded movement after pickup only allowed for 80–90% success | Pass (Partial)   |
+| Boundary detection               | Robot reroutes away from the perimeter       | Correct response 100% of the time                                               | Pass             |
+| Remote toggle and command response | Mode toggles + joystick driving              | Works reliably with LCD feedback; minor inconsistency with auto/manual toggle   | Pass (Partial)   |
+| Coin classification              | Correct sound + LCD                          | All coin types correctly identified                                              | Pass             |
 
-Using Timer 0 and Timer 1, the microcontroller tracked elapsed time and oven temperature. If the oven failed to reach 50℃ within the first 60 seconds, the microcontroller shut off the toaster oven and reset to the idle state.
-
-To create the PWM signal, Timer 2 generated a duty cycle based on the reflow profile (0% for idle, 100% for soak, 20% for reflow, and 0% for cooldown). The PWM signal controlled the solid-state relay, turning the toaster oven on and off.
-
-# Data Collection and Validation
-During reflow soldering, the oven temperature was recorded every 0.5 seconds into the terminal and CSV file, in which was plotted in real-time using Python Matplotlib. In the end, our team successfully replicated a reflow soldering profile as close to the ideal temperature plot as possible.
-
-| **Ideal Temperature Profile** | **Actual Temperature Sensor Data** |
-|------------------------------|--------------------------------|
-| {{< figure src="ideal_temperature.png" alt="Ideal Temperature" >}} | {{< figure src="temperature_plot.png" alt="Actual Temperature" >}} |
 
 # Conclusion and Reflection
-This project was a great learning experience in hardware design, firmware development, and real-time data plotting. It was challenging to balance the gain of the OP07 op-amp and to design a reliable finite state machine that transitioned between reflow states accurately. The uses of assembly language and interfacing with hardware components were also new to me and required a lot of debugging, understanding of the fundamentals and attention to detail. Even though our team could not implement original additional features such as adding a soundtrack into the final beep or an automatic oven opening mechanism, we were able to meet all the requirements and create a functional reflow oven.
+This project was a great learning experience in hardware design, firmware development, and time management. Using two family of microcontrollers required a lot of planning, testing and attention to details as well as a lot of debugging. I learned the use of makefiles, code initialization and the importance of coding sparingly and efficiently. I also learned the importance of clear hardware design and wiring as it made the debugging process much easier. I also learned the importance of testing and validating each subsystem before moving on to the next phase of the project. This helped us to identify and fix issues early on, rather than waiting until the end of the project to find out that something was not working. 
 
-I was also really proud of the team perserverance and dedication to the project. Despite a difficult start with not everyone in the team understanding the project requirements, we were able to come together, push through till the final hours of the project and delivered an product that was worthy of pads on the back. However, I do wish we had planned the implementation of the additional features better and had more time to test the system.
+I was also really proud of the team perserverance and dedication to the project. Despite having both technical difficulties when integrating the radio communication and some communication issues within the team especially at the end when we also had final exams, we were able to come together, push through till the final hours of the project and delivered an product that was worthy of pads on the back. 
 
 # Acknowledgements
 I want to thank my team members, Jackson Rockford, Matthew Yeun, Harry Nguyen and Adrian Chua for their hard work and dedication to the project. I also want to thank the ELEC 291 instructor, Jesus Calvino-Fraga for his guidance and support throughout the project.
