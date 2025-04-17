@@ -8,7 +8,7 @@ weight: 1
 [🔗 View on GitHub](https://github.com/AP010307/ELEC-291-Coin-Picking-Robot)
 {{< figure src="top_view.jpg" alt="Robot and Remote" >}}
 # Overview
-I spearheaded a group of five people in an ELEC 291 project that the EFM8LB1 and ATMega32P microcontrollers to create a robot that is able to pick up 20 coins.
+I spearheaded a group of five people in an ELEC 291 project that utilises the EFM8LB1 and ATMega32P microcontrollers to create a robot that is able to pick up 20 coins.
 
 # Introduction
 This project is the ultimatum of my ELEC 291 course, where my team was tasked with creating a robot that could pick up 20 coins. The robot was designed to be able to stay within a perimeter powered by AC signal while detecting and picking up coins using multipl solenoids. 
