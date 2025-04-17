@@ -2,9 +2,10 @@
 title: "Coin picking robot"
 tags: ["Altium", "Assembly", "Circuit Design", "Python"]
 categories: ["Projects"]
-github: "https://github.com/harryHatesCPEN211/ELEC291_project_1"
+github: "https://github.com/AP010307/ELEC-291-Coin-Picking-Robot"
 weight: 1
 ---
+[🔗 View on GitHub](https://github.com/AP010307/ELEC-291-Coin-Picking-Robot)
 {{< figure src="top_view.jpg" alt="Robot and Remote" >}}
 # Overview
 I spearheaded a group of five people in an ELEC 291 project that the EFM8LB1 and ATMega32P microcontrollers to create a robot that is able to pick up 20 coins.
