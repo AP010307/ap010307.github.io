@@ -31,7 +31,7 @@ publishDir = "docs"
 
 [[params.socialIcons]]
   name = "email"
-  url = "mailto:allen.p.parsec@gmail.com"
+  url = "mailto:anhphamvuduy37@gmail.com"
 [[params.socialIcons]]
   name = "github"
   url = "https://github.com/AP010307"
