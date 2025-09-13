@@ -2,38 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Circuit Design on Allen Pham</title>
-    <link>https://ap010307.github.io/portfolio/tags/circuit-design/</link>
+    <link>http://localhost:1313/portfolio/tags/circuit-design/</link>
     <description>Recent content in Circuit Design on Allen Pham</description>
     <image>
       <title>Allen Pham</title>
-      <url>https://ap010307.github.io/portfolio/logo.png</url>
-      <link>https://ap010307.github.io/portfolio/logo.png</link>
+      <url>http://localhost:1313/portfolio/logo.png</url>
+      <link>http://localhost:1313/portfolio/logo.png</link>
     </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 08 Mar 2025 16:46:16 -0800</lastBuildDate>
-    <atom:link href="https://ap010307.github.io/portfolio/tags/circuit-design/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Coin picking robot</title>
-      <link>https://ap010307.github.io/portfolio/projects/robot_picking_up/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ap010307.github.io/portfolio/projects/robot_picking_up/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/AP010307/ELEC-291-Coin-Picking-Robot&#34;&gt;🔗 View on GitHub&lt;/a&gt;
-&lt;figure&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;top_view.jpg&#34;
-         alt=&#34;Robot and Remote&#34;/&gt; 
-&lt;/figure&gt;
-&lt;/p&gt;
-&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
-&lt;p&gt;I spearheaded a group of five people in an ELEC 291 project that utilises the EFM8LB1 and ATMega32P microcontrollers to create a robot that is able to pick up 20 coins.&lt;/p&gt;
-&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;This project is the ultimatum of my ELEC 291 course, where my team was tasked with creating a robot that could pick up 20 coins. The robot was designed to be able to stay within a perimeter powered by AC signal while detecting and picking up coins using multipl solenoids.&lt;/p&gt;</description>
-    </item>
+    <atom:link href="http://localhost:1313/portfolio/tags/circuit-design/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Reflow Oven Controller</title>
-      <link>https://ap010307.github.io/portfolio/projects/reflow_oven/</link>
+      <link>http://localhost:1313/portfolio/projects/reflow_oven/</link>
       <pubDate>Sat, 08 Mar 2025 16:46:16 -0800</pubDate>
-      <guid>https://ap010307.github.io/portfolio/projects/reflow_oven/</guid>
+      <guid>http://localhost:1313/portfolio/projects/reflow_oven/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/harryHatesCPEN211/ELEC291_project_1&#34;&gt;🔗 View on GitHub&lt;/a&gt;&lt;/p&gt;
 &lt;figure&gt;
     &lt;img loading=&#34;lazy&#34; src=&#34;project1_schematics.png&#34;
@@ -44,6 +28,22 @@
 &lt;p&gt;I spearheaded a group of five people in an ELEC 291 project that utilized Intel&amp;rsquo;s 8051 microcontroller and assembly language to implement reflow soldering using a toaster oven.&lt;/p&gt;
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;Reflow soldering was used to assemble surface-mounted-technology (SMT) devices onto printed circuit boards (PCBs). The process utilized solder paste (a mixture of solder flux and pellets with adhesive properties) to attach micro-components onto the PCBs. Once components were moderately secured on the pads, the board was placed into an oven, which was gradually heated according to a predetermined soldering profile. This profile included a customizable reflow time, reflow temperature, and soak time. During the heating process, the flux was activated, and the solder paste melted, soldering the components onto the PCB.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Coin picking robot</title>
+      <link>http://localhost:1313/portfolio/projects/robot_picking_up/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/projects/robot_picking_up/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/AP010307/ELEC-291-Coin-Picking-Robot&#34;&gt;🔗 View on GitHub&lt;/a&gt;
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;top_view.jpg&#34;
+         alt=&#34;Robot and Remote&#34;/&gt; 
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
+&lt;p&gt;I spearheaded a group of five people in an ELEC 291 project that utilises the EFM8LB1 and ATMega32P microcontrollers to create a robot that is able to pick up 20 coins.&lt;/p&gt;
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;This project is the ultimatum of my ELEC 291 course, where my team was tasked with creating a robot that could pick up 20 coins. The robot was designed to be able to stay within a perimeter powered by AC signal while detecting and picking up coins using multipl solenoids.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

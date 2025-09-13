@@ -2,38 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Projects on Allen Pham</title>
-    <link>https://ap010307.github.io/portfolio/categories/projects/</link>
+    <link>http://localhost:1313/portfolio/categories/projects/</link>
     <description>Recent content in Projects on Allen Pham</description>
     <image>
       <title>Allen Pham</title>
-      <url>https://ap010307.github.io/portfolio/logo.png</url>
-      <link>https://ap010307.github.io/portfolio/logo.png</link>
+      <url>http://localhost:1313/portfolio/logo.png</url>
+      <link>http://localhost:1313/portfolio/logo.png</link>
     </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Mar 2025 16:46:16 -0800</lastBuildDate>
-    <atom:link href="https://ap010307.github.io/portfolio/categories/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Aug 2025 16:46:16 -0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/portfolio/categories/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Coin picking robot</title>
-      <link>https://ap010307.github.io/portfolio/projects/robot_picking_up/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ap010307.github.io/portfolio/projects/robot_picking_up/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/AP010307/ELEC-291-Coin-Picking-Robot&#34;&gt;🔗 View on GitHub&lt;/a&gt;
-&lt;figure&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;top_view.jpg&#34;
-         alt=&#34;Robot and Remote&#34;/&gt; 
-&lt;/figure&gt;
-&lt;/p&gt;
+      <title>LunaPure thermal system simulation</title>
+      <link>http://localhost:1313/portfolio/projects/lunapure_simulation/</link>
+      <pubDate>Fri, 29 Aug 2025 16:46:16 -0800</pubDate>
+      <guid>http://localhost:1313/portfolio/projects/lunapure_simulation/</guid>
+      <description>&lt;h1 id=&#34;disclaimer&#34;&gt;DISCLAIMER&lt;/h1&gt;
+&lt;p&gt;This project is ongoing and is currently under the intellectually property of the Pacific Space Exploration Corp and Canadian Space Mining Corperation so the information on this site is a work in progress and has been allowed to be disclosed with supervision.&lt;/p&gt;
 &lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
-&lt;p&gt;I spearheaded a group of five people in an ELEC 291 project that utilises the EFM8LB1 and ATMega32P microcontrollers to create a robot that is able to pick up 20 coins.&lt;/p&gt;
-&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;This project is the ultimatum of my ELEC 291 course, where my team was tasked with creating a robot that could pick up 20 coins. The robot was designed to be able to stay within a perimeter powered by AC signal while detecting and picking up coins using multipl solenoids.&lt;/p&gt;</description>
+&lt;p&gt;I created a Simulink model of PARSEC&amp;rsquo;s lunar water purification system to help fellow engineers to improve their thermal system and understand the mechanism of the reactor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Reflow Oven Controller</title>
-      <link>https://ap010307.github.io/portfolio/projects/reflow_oven/</link>
+      <link>http://localhost:1313/portfolio/projects/reflow_oven/</link>
       <pubDate>Sat, 08 Mar 2025 16:46:16 -0800</pubDate>
-      <guid>https://ap010307.github.io/portfolio/projects/reflow_oven/</guid>
+      <guid>http://localhost:1313/portfolio/projects/reflow_oven/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/harryHatesCPEN211/ELEC291_project_1&#34;&gt;🔗 View on GitHub&lt;/a&gt;&lt;/p&gt;
 &lt;figure&gt;
     &lt;img loading=&#34;lazy&#34; src=&#34;project1_schematics.png&#34;
@@ -46,10 +40,26 @@
 &lt;p&gt;Reflow soldering was used to assemble surface-mounted-technology (SMT) devices onto printed circuit boards (PCBs). The process utilized solder paste (a mixture of solder flux and pellets with adhesive properties) to attach micro-components onto the PCBs. Once components were moderately secured on the pads, the board was placed into an oven, which was gradually heated according to a predetermined soldering profile. This profile included a customizable reflow time, reflow temperature, and soak time. During the heating process, the flux was activated, and the solder paste melted, soldering the components onto the PCB.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Coin picking robot</title>
+      <link>http://localhost:1313/portfolio/projects/robot_picking_up/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/projects/robot_picking_up/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/AP010307/ELEC-291-Coin-Picking-Robot&#34;&gt;🔗 View on GitHub&lt;/a&gt;
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;top_view.jpg&#34;
+         alt=&#34;Robot and Remote&#34;/&gt; 
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
+&lt;p&gt;I spearheaded a group of five people in an ELEC 291 project that utilises the EFM8LB1 and ATMega32P microcontrollers to create a robot that is able to pick up 20 coins.&lt;/p&gt;
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;This project is the ultimatum of my ELEC 291 course, where my team was tasked with creating a robot that could pick up 20 coins. The robot was designed to be able to stay within a perimeter powered by AC signal while detecting and picking up coins using multipl solenoids.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>RISC Machine</title>
-      <link>https://ap010307.github.io/portfolio/projects/risc/</link>
+      <link>http://localhost:1313/portfolio/projects/risc/</link>
       <pubDate>Fri, 14 Feb 2025 16:46:16 -0800</pubDate>
-      <guid>https://ap010307.github.io/portfolio/projects/risc/</guid>
+      <guid>http://localhost:1313/portfolio/projects/risc/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/AP010307/CPEN_211_RSIC.git&#34;&gt;🔗 View on GitHub&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;A SystemVerilog and ARM assembly project that creates a simple computer with basic arithmetics and memories.&lt;/p&gt;
 &lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
@@ -59,9 +69,9 @@
     </item>
     <item>
       <title>UBC Supermileage Vehicle Simulation</title>
-      <link>https://ap010307.github.io/portfolio/projects/supermileage_sim/ubc_supermileage/</link>
+      <link>http://localhost:1313/portfolio/projects/supermileage_sim/ubc_supermileage/</link>
       <pubDate>Fri, 14 Feb 2025 16:46:16 -0800</pubDate>
-      <guid>https://ap010307.github.io/portfolio/projects/supermileage_sim/ubc_supermileage/</guid>
+      <guid>http://localhost:1313/portfolio/projects/supermileage_sim/ubc_supermileage/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;%22https://github.com/AP010307/UBC-Supermileage-Vehicle-Simulation.git%22&#34;&gt;🔗 View on GitHub&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
 &lt;p&gt;A MATLAB project looking for the best racing strategy for the UBC Supermileage team.&lt;/p&gt;
@@ -70,9 +80,9 @@
     </item>
     <item>
       <title>Signal Generator</title>
-      <link>https://ap010307.github.io/portfolio/projects/sig_gen/</link>
+      <link>http://localhost:1313/portfolio/projects/sig_gen/</link>
       <pubDate>Sat, 08 Mar 2025 16:46:16 -0800</pubDate>
-      <guid>https://ap010307.github.io/portfolio/projects/sig_gen/</guid>
+      <guid>http://localhost:1313/portfolio/projects/sig_gen/</guid>
       <description>&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;

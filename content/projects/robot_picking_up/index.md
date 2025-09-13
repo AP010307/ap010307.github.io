@@ -3,7 +3,7 @@ title: "Coin picking robot"
 tags: ["Altium", "Assembly", "Circuit Design", "Python"]
 categories: ["Projects"]
 github: "https://github.com/AP010307/ELEC-291-Coin-Picking-Robot"
-weight: 1
+weight: 2
 ---
 [🔗 View on GitHub](https://github.com/AP010307/ELEC-291-Coin-Picking-Robot)
 {{< figure src="top_view.jpg" alt="Robot and Remote" >}}
