@@ -1,10 +1,11 @@
-baseURL = "https://ap010307.github.io/portfolio"
+baseURL = "https://ap010307.github.io/"
 languageCode = "en-us"
 title = "Allen Pham"
 theme = "PaperMod"
 enableRobotsTXT = true
 defaultContentLanguage = "en"
-publishDir = "docs"
+canonifyURLs = true
+relativeURLs = false
 
 
 
