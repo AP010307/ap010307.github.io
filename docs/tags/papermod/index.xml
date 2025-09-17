@@ -1,99 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>PaperMod on Allen Pham</title>
-    <link>http://localhost:1313/portfolio/tags/papermod/</link>
-    <description>Recent content in PaperMod on Allen Pham</description>
-    <image>
-      <title>Allen Pham</title>
-      <url>http://localhost:1313/portfolio/logo.png</url>
-      <link>http://localhost:1313/portfolio/logo.png</link>
-    </image>
-    <generator>Hugo -- 0.150.0</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 15 Mar 2025 14:31:55 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/portfolio/tags/papermod/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>First friend to leave the server</title>
-      <link>http://localhost:1313/portfolio/blogs/first_friend_to_leave_the_server/</link>
-      <pubDate>Fri, 14 Mar 2025 16:46:16 -0800</pubDate>
-      <guid>http://localhost:1313/portfolio/blogs/first_friend_to_leave_the_server/</guid>
-      <description>&lt;p&gt;When you attended your first friend&amp;rsquo;s funeral, you questioned yourself &amp;ldquo;Have I done enough for what you believe ?&amp;rdquo;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Як гартувалася сталь !,</title>
-      <link>http://localhost:1313/portfolio/blogs/%D1%8F%D0%BA-%D0%B3%D0%B0%D1%80%D1%82%D1%83%D0%B2%D0%B0%D0%BB%D0%B0%D1%81%D1%8F-%D1%81%D1%82%D0%B0%D0%BB%D1%8C-/</link>
-      <pubDate>Fri, 14 Mar 2025 16:46:16 -0800</pubDate>
-      <guid>http://localhost:1313/portfolio/blogs/%D1%8F%D0%BA-%D0%B3%D0%B0%D1%80%D1%82%D1%83%D0%B2%D0%B0%D0%BB%D0%B0%D1%81%D1%8F-%D1%81%D1%82%D0%B0%D0%BB%D1%8C-/</guid>
-      <description>&lt;p&gt;A piece of steel is dunked in nitrogen, then shattered into a million pieces. Are you strong enough?&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>RISC Machine</title>
-      <link>http://localhost:1313/portfolio/projects/risc/</link>
-      <pubDate>Fri, 14 Feb 2025 16:46:16 -0800</pubDate>
-      <guid>http://localhost:1313/portfolio/projects/risc/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/AP010307/CPEN_211_RSIC.git&#34;&gt;🔗 View on GitHub&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>PaperMod on Allen Pham</title><link>https://ap010307.github.io/portfolio/tags/papermod/</link><description>Recent content in PaperMod on Allen Pham</description><image><title>Allen Pham</title><url>https://ap010307.github.io/portfolio/logo.png</url><link>https://ap010307.github.io/portfolio/logo.png</link></image><generator>Hugo -- 0.150.0</generator><language>en-us</language><lastBuildDate>Fri, 14 Mar 2025 16:46:16 -0800</lastBuildDate><atom:link href="https://ap010307.github.io/portfolio/tags/papermod/index.xml" rel="self" type="application/rss+xml"/><item><title>First friend to leave the server</title><link>https://ap010307.github.io/portfolio/blogs/first_friend_to_leave_the_server/</link><pubDate>Fri, 14 Mar 2025 16:46:16 -0800</pubDate><guid>https://ap010307.github.io/portfolio/blogs/first_friend_to_leave_the_server/</guid><description>&lt;p&gt;When you attended your first friend&amp;rsquo;s funeral, you questioned yourself &amp;ldquo;Have I done enough for what you believe ?&amp;rdquo;&lt;/p&gt;</description></item><item><title>Як гартувалася сталь !,</title><link>https://ap010307.github.io/portfolio/blogs/%D1%8F%D0%BA-%D0%B3%D0%B0%D1%80%D1%82%D1%83%D0%B2%D0%B0%D0%BB%D0%B0%D1%81%D1%8F-%D1%81%D1%82%D0%B0%D0%BB%D1%8C-/</link><pubDate>Fri, 14 Mar 2025 16:46:16 -0800</pubDate><guid>https://ap010307.github.io/portfolio/blogs/%D1%8F%D0%BA-%D0%B3%D0%B0%D1%80%D1%82%D1%83%D0%B2%D0%B0%D0%BB%D0%B0%D1%81%D1%8F-%D1%81%D1%82%D0%B0%D0%BB%D1%8C-/</guid><description>&lt;p&gt;A piece of steel is dunked in nitrogen, then shattered into a million pieces. Are you strong enough?&lt;/p&gt;</description></item><item><title>RISC Machine</title><link>https://ap010307.github.io/portfolio/projects/risc/</link><pubDate>Fri, 14 Feb 2025 16:46:16 -0800</pubDate><guid>https://ap010307.github.io/portfolio/projects/risc/</guid><description>&lt;p&gt;&lt;a href="https://github.com/AP010307/CPEN_211_RSIC.git"&gt;🔗 View on GitHub&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;A SystemVerilog and ARM assembly project that creates a simple computer with basic arithmetics and memories.&lt;/p&gt;
-&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
-&lt;p&gt;This project is 3 labs combined into one project for CPEN 211, where we designed a  reduced set instruction computer (RISC) machine using SystemVerilog and ARM assembly on a De1-SoC board. The RISC machine is capable of performing basic arithmetic operations and memory operations.&lt;/p&gt;
-&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;The project was divided into two parts: the SystemVerilog part and the ARM assembly part. The SystemVerilog part was to design the RISC machine using a finite state machine (FSM) and the ARM assembly part was to write a program that runs on the RISC machine. The RISC machine was designed to have a 16-bit data bus, 16-bit address bus, 16-bit registers, and 16-bit memory. The machine was capable of performing basic arithmetic operations such as addition, subtraction, multiplication, and division. It was also capable of performing memory operations such as load and store.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Signal Generator</title>
-      <link>http://localhost:1313/portfolio/projects/sig_gen/</link>
-      <pubDate>Sat, 08 Mar 2025 16:46:16 -0800</pubDate>
-      <guid>http://localhost:1313/portfolio/projects/sig_gen/</guid>
-      <description>&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;&lt;strong&gt;Schematics&lt;/strong&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;strong&gt;PCB_layout&lt;/strong&gt;&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;figure&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;pcb_schematics.png&#34;
-         alt=&#34;Schematics&#34;/&gt; 
+&lt;h1 id="overview"&gt;Overview&lt;/h1&gt;
+&lt;p&gt;This project is 3 labs combined into one project for CPEN 211, where we designed a reduced set instruction computer (RISC) machine using SystemVerilog and ARM assembly on a De1-SoC board. The RISC machine is capable of performing basic arithmetic operations and memory operations.&lt;/p&gt;
+&lt;h1 id="introduction"&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;The project was divided into two parts: the SystemVerilog part and the ARM assembly part. The SystemVerilog part was to design the RISC machine using a finite state machine (FSM) and the ARM assembly part was to write a program that runs on the RISC machine. The RISC machine was designed to have a 16-bit data bus, 16-bit address bus, 16-bit registers, and 16-bit memory. The machine was capable of performing basic arithmetic operations such as addition, subtraction, multiplication, and division. It was also capable of performing memory operations such as load and store.&lt;/p&gt;</description></item><item><title>Signal Generator</title><link>https://ap010307.github.io/portfolio/projects/sig_gen/</link><pubDate>Sat, 08 Mar 2025 16:46:16 -0800</pubDate><guid>https://ap010307.github.io/portfolio/projects/sig_gen/</guid><description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;Schematics&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;PCB_layout&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;figure&gt;
+&lt;img loading="lazy" src="pcb_schematics.png"
+alt="Schematics"/&gt;
 &lt;/figure&gt;
 &lt;/td&gt;
-          &lt;td&gt;&lt;figure&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;pcb_layout.png&#34;
-         alt=&#34;PCB layout&#34;/&gt; 
+&lt;td&gt;&lt;figure&gt;
+&lt;img loading="lazy" src="pcb_layout.png"
+alt="PCB layout"/&gt;
 &lt;/figure&gt;
 &lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;&lt;strong&gt;PCB_3D&lt;/strong&gt;&lt;br&gt;
 &lt;figure&gt;
-      &lt;img loading=&#34;lazy&#34; src=&#34;pcb_3d.png&#34;
-           alt=&#34;PCB 3D&#34;/&gt; 
-  &lt;/figure&gt;
+&lt;img loading="lazy" src="pcb_3d.png"
+alt="PCB 3D"/&gt;
+&lt;/figure&gt;
 &lt;/p&gt;
-&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
+&lt;h1 id="overview"&gt;Overview&lt;/h1&gt;
 &lt;p&gt;A signal generator PCB created using KiCad.&lt;/p&gt;
-&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;h1 id="introduction"&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;This project was my introduction to PCB design using KiCad. Provided with a schematics, I created a square-wave signal generator that its frequency and gain can be adjusted using multiple potentiometers.&lt;/p&gt;
-&lt;h1 id=&#34;objective&#34;&gt;Objective&lt;/h1&gt;
-&lt;p&gt;The objective of this project was to learn how to design a PCB using KiCad and to understand the basic concepts of signal generation. The project also taught me to use different circuit testing equpments such as oscilloscope and multimeter. Lastly, I was introduced to SMD components, bill of materials and how to solder these components onto the PCB.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Blog</title>
-      <link>http://localhost:1313/portfolio/blogs/</link>
-      <pubDate>Sat, 15 Mar 2025 14:31:55 -0700</pubDate>
-      <guid>http://localhost:1313/portfolio/blogs/</guid>
-      <description>&lt;h2 id=&#34;where-my-mind-dances-with-my-fingers&#34;&gt;Where my mind dances with my fingers&lt;/h2&gt;</description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>http://localhost:1313/portfolio/about/</link>
-      <pubDate>Mon, 10 Mar 2025 14:31:55 -0700</pubDate>
-      <guid>http://localhost:1313/portfolio/about/</guid>
-      <description>&lt;h2 id=&#34;this-is-my-portfolio&#34;&gt;This is my portfolio&lt;/h2&gt;
+&lt;h1 id="objective"&gt;Objective&lt;/h1&gt;
+&lt;p&gt;The objective of this project was to learn how to design a PCB using KiCad and to understand the basic concepts of signal generation. The project also taught me to use different circuit testing equpments such as oscilloscope and multimeter. Lastly, I was introduced to SMD components, bill of materials and how to solder these components onto the PCB.&lt;/p&gt;</description></item><item><title>About</title><link>https://ap010307.github.io/portfolio/about/</link><pubDate>Mon, 10 Mar 2025 14:31:55 -0700</pubDate><guid>https://ap010307.github.io/portfolio/about/</guid><description>&lt;h2 id="this-is-my-portfolio"&gt;This is my portfolio&lt;/h2&gt;
 &lt;p&gt;This page is sharing my projects, blogs, and other things I am working on.&lt;/p&gt;
-&lt;p&gt;I love working on interdisciplinary projects and looking for new solutions combining different fields. Outside of engineering, I love racing, specifically sim racing and karting. I am also a big fan of Formula 1 and looking for opportunities to work in the motorsport industry.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+&lt;p&gt;I love working on interdisciplinary projects and looking for new solutions combining different fields. Outside of engineering, I love racing, specifically sim racing and karting. I am also a big fan of Formula 1 and looking for opportunities to work in the motorsport industry.&lt;/p&gt;</description></item></channel></rss>
