@@ -1,1 +1,87 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Tags on Allen Pham</title><link>https://ap010307.github.io/portfolio/tags/</link><description>Recent content in Tags on Allen Pham</description><image><title>Allen Pham</title><url>https://ap010307.github.io/portfolio/logo.png</url><link>https://ap010307.github.io/portfolio/logo.png</link></image><generator>Hugo -- 0.150.0</generator><language>en-us</language><lastBuildDate>Fri, 29 Aug 2025 16:46:16 -0800</lastBuildDate><atom:link href="https://ap010307.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml"/><item><title>MATLAB</title><link>https://ap010307.github.io/portfolio/tags/matlab/</link><pubDate>Fri, 29 Aug 2025 16:46:16 -0800</pubDate><guid>https://ap010307.github.io/portfolio/tags/matlab/</guid><description/></item><item><title>Simulink</title><link>https://ap010307.github.io/portfolio/tags/simulink/</link><pubDate>Fri, 29 Aug 2025 16:46:16 -0800</pubDate><guid>https://ap010307.github.io/portfolio/tags/simulink/</guid><description/></item><item><title>Hugo</title><link>https://ap010307.github.io/portfolio/tags/hugo/</link><pubDate>Fri, 14 Mar 2025 16:46:16 -0800</pubDate><guid>https://ap010307.github.io/portfolio/tags/hugo/</guid><description/></item><item><title>PaperMod</title><link>https://ap010307.github.io/portfolio/tags/papermod/</link><pubDate>Fri, 14 Mar 2025 16:46:16 -0800</pubDate><guid>https://ap010307.github.io/portfolio/tags/papermod/</guid><description/></item><item><title>Altium</title><link>https://ap010307.github.io/portfolio/tags/altium/</link><pubDate>Sat, 08 Mar 2025 16:46:16 -0800</pubDate><guid>https://ap010307.github.io/portfolio/tags/altium/</guid><description/></item><item><title>Assembly</title><link>https://ap010307.github.io/portfolio/tags/assembly/</link><pubDate>Sat, 08 Mar 2025 16:46:16 -0800</pubDate><guid>https://ap010307.github.io/portfolio/tags/assembly/</guid><description/></item><item><title>Circuit Design</title><link>https://ap010307.github.io/portfolio/tags/circuit-design/</link><pubDate>Sat, 08 Mar 2025 16:46:16 -0800</pubDate><guid>https://ap010307.github.io/portfolio/tags/circuit-design/</guid><description/></item><item><title>Python</title><link>https://ap010307.github.io/portfolio/tags/python/</link><pubDate>Sat, 08 Mar 2025 16:46:16 -0800</pubDate><guid>https://ap010307.github.io/portfolio/tags/python/</guid><description/></item><item><title>Database</title><link>https://ap010307.github.io/portfolio/tags/database/</link><pubDate>Fri, 14 Feb 2025 16:46:16 -0800</pubDate><guid>https://ap010307.github.io/portfolio/tags/database/</guid><description/></item><item><title>UBC</title><link>https://ap010307.github.io/portfolio/tags/ubc/</link><pubDate>Fri, 14 Feb 2025 16:46:16 -0800</pubDate><guid>https://ap010307.github.io/portfolio/tags/ubc/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Allen Pham</title>
+    <link>https://ap010307.github.io/portfolio/tags/</link>
+    <description>Recent content in Tags on Allen Pham</description>
+    <image>
+      <title>Allen Pham</title>
+      <url>https://ap010307.github.io/portfolio/logo.png</url>
+      <link>https://ap010307.github.io/portfolio/logo.png</link>
+    </image>
+    <generator>Hugo -- 0.150.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Aug 2025 16:46:16 -0800</lastBuildDate>
+    <atom:link href="https://ap010307.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MATLAB</title>
+      <link>https://ap010307.github.io/portfolio/tags/matlab/</link>
+      <pubDate>Fri, 29 Aug 2025 16:46:16 -0800</pubDate>
+      <guid>https://ap010307.github.io/portfolio/tags/matlab/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Simulink</title>
+      <link>https://ap010307.github.io/portfolio/tags/simulink/</link>
+      <pubDate>Fri, 29 Aug 2025 16:46:16 -0800</pubDate>
+      <guid>https://ap010307.github.io/portfolio/tags/simulink/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>https://ap010307.github.io/portfolio/tags/hugo/</link>
+      <pubDate>Fri, 14 Mar 2025 16:46:16 -0800</pubDate>
+      <guid>https://ap010307.github.io/portfolio/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PaperMod</title>
+      <link>https://ap010307.github.io/portfolio/tags/papermod/</link>
+      <pubDate>Fri, 14 Mar 2025 16:46:16 -0800</pubDate>
+      <guid>https://ap010307.github.io/portfolio/tags/papermod/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Altium</title>
+      <link>https://ap010307.github.io/portfolio/tags/altium/</link>
+      <pubDate>Sat, 08 Mar 2025 16:46:16 -0800</pubDate>
+      <guid>https://ap010307.github.io/portfolio/tags/altium/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Assembly</title>
+      <link>https://ap010307.github.io/portfolio/tags/assembly/</link>
+      <pubDate>Sat, 08 Mar 2025 16:46:16 -0800</pubDate>
+      <guid>https://ap010307.github.io/portfolio/tags/assembly/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Circuit Design</title>
+      <link>https://ap010307.github.io/portfolio/tags/circuit-design/</link>
+      <pubDate>Sat, 08 Mar 2025 16:46:16 -0800</pubDate>
+      <guid>https://ap010307.github.io/portfolio/tags/circuit-design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://ap010307.github.io/portfolio/tags/python/</link>
+      <pubDate>Sat, 08 Mar 2025 16:46:16 -0800</pubDate>
+      <guid>https://ap010307.github.io/portfolio/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Database</title>
+      <link>https://ap010307.github.io/portfolio/tags/database/</link>
+      <pubDate>Fri, 14 Feb 2025 16:46:16 -0800</pubDate>
+      <guid>https://ap010307.github.io/portfolio/tags/database/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>UBC</title>
+      <link>https://ap010307.github.io/portfolio/tags/ubc/</link>
+      <pubDate>Fri, 14 Feb 2025 16:46:16 -0800</pubDate>
+      <guid>https://ap010307.github.io/portfolio/tags/ubc/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

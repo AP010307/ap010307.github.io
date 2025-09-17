@@ -1,63 +1,122 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Projects on Allen Pham</title><link>https://ap010307.github.io/portfolio/categories/projects/</link><description>Recent content in Projects on Allen Pham</description><image><title>Allen Pham</title><url>https://ap010307.github.io/portfolio/logo.png</url><link>https://ap010307.github.io/portfolio/logo.png</link></image><generator>Hugo -- 0.150.0</generator><language>en-us</language><lastBuildDate>Fri, 29 Aug 2025 16:46:16 -0800</lastBuildDate><atom:link href="https://ap010307.github.io/portfolio/categories/projects/index.xml" rel="self" type="application/rss+xml"/><item><title>LunaPure thermal system simulation</title><link>https://ap010307.github.io/portfolio/projects/lunapure_simulation/</link><pubDate>Fri, 29 Aug 2025 16:46:16 -0800</pubDate><guid>https://ap010307.github.io/portfolio/projects/lunapure_simulation/</guid><description>&lt;h1 id="disclaimer"&gt;DISCLAIMER&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Projects on Allen Pham</title>
+    <link>https://ap010307.github.io/portfolio/categories/projects/</link>
+    <description>Recent content in Projects on Allen Pham</description>
+    <image>
+      <title>Allen Pham</title>
+      <url>https://ap010307.github.io/portfolio/logo.png</url>
+      <link>https://ap010307.github.io/portfolio/logo.png</link>
+    </image>
+    <generator>Hugo -- 0.150.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Aug 2025 16:46:16 -0800</lastBuildDate>
+    <atom:link href="https://ap010307.github.io/portfolio/categories/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LunaPure thermal system simulation</title>
+      <link>https://ap010307.github.io/portfolio/projects/lunapure_simulation/</link>
+      <pubDate>Fri, 29 Aug 2025 16:46:16 -0800</pubDate>
+      <guid>https://ap010307.github.io/portfolio/projects/lunapure_simulation/</guid>
+      <description>&lt;h1 id=&#34;disclaimer&#34;&gt;DISCLAIMER&lt;/h1&gt;
 &lt;p&gt;This project is ongoing and is currently under the intellectually property of the Pacific Space Exploration Corp and Canadian Space Mining Corperation so the information on this site is a work in progress and has been allowed to be disclosed with supervision. Further discussion about the project can be discussed later through email or interview.&lt;/p&gt;
-&lt;h1 id="overview"&gt;Overview&lt;/h1&gt;
-&lt;p&gt;I created a Simulink model of PARSEC&amp;rsquo;s lunar water purification system to help fellow engineers to improve their thermal system and understand the mechanism of the reactor.&lt;/p&gt;</description></item><item><title>Reflow Oven Controller</title><link>https://ap010307.github.io/portfolio/projects/reflow_oven/</link><pubDate>Sat, 08 Mar 2025 16:46:16 -0800</pubDate><guid>https://ap010307.github.io/portfolio/projects/reflow_oven/</guid><description>&lt;p&gt;&lt;a href="https://github.com/harryHatesCPEN211/ELEC291_project_1"&gt;🔗 View on GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
+&lt;p&gt;I created a Simulink model of PARSEC&amp;rsquo;s lunar water purification system to help fellow engineers to improve their thermal system and understand the mechanism of the reactor.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Reflow Oven Controller</title>
+      <link>https://ap010307.github.io/portfolio/projects/reflow_oven/</link>
+      <pubDate>Sat, 08 Mar 2025 16:46:16 -0800</pubDate>
+      <guid>https://ap010307.github.io/portfolio/projects/reflow_oven/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/harryHatesCPEN211/ELEC291_project_1&#34;&gt;🔗 View on GitHub&lt;/a&gt;&lt;/p&gt;
 &lt;figure&gt;
-&lt;img loading="lazy" src="project1_schematics.png"
-alt="Reflow Oven Schematics"/&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;project1_schematics.png&#34;
+         alt=&#34;Reflow Oven Schematics&#34;/&gt; 
 &lt;/figure&gt;
-&lt;h1 id="overview"&gt;Overview&lt;/h1&gt;
+
+&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
 &lt;p&gt;I spearheaded a group of five people in an ELEC 291 project that utilized Intel&amp;rsquo;s 8051 microcontroller and assembly language to implement reflow soldering using a toaster oven.&lt;/p&gt;
-&lt;h1 id="introduction"&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;Reflow soldering was used to assemble surface-mounted-technology (SMT) devices onto printed circuit boards (PCBs). The process utilized solder paste (a mixture of solder flux and pellets with adhesive properties) to attach micro-components onto the PCBs. Once components were moderately secured on the pads, the board was placed into an oven, which was gradually heated according to a predetermined soldering profile. This profile included a customizable reflow time, reflow temperature, and soak time. During the heating process, the flux was activated, and the solder paste melted, soldering the components onto the PCB.&lt;/p&gt;</description></item><item><title>Coin picking robot</title><link>https://ap010307.github.io/portfolio/projects/robot_picking_up/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ap010307.github.io/portfolio/projects/robot_picking_up/</guid><description>&lt;p&gt;&lt;a href="https://github.com/AP010307/ELEC-291-Coin-Picking-Robot"&gt;🔗 View on GitHub&lt;/a&gt;
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Reflow soldering was used to assemble surface-mounted-technology (SMT) devices onto printed circuit boards (PCBs). The process utilized solder paste (a mixture of solder flux and pellets with adhesive properties) to attach micro-components onto the PCBs. Once components were moderately secured on the pads, the board was placed into an oven, which was gradually heated according to a predetermined soldering profile. This profile included a customizable reflow time, reflow temperature, and soak time. During the heating process, the flux was activated, and the solder paste melted, soldering the components onto the PCB.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Coin picking robot</title>
+      <link>https://ap010307.github.io/portfolio/projects/robot_picking_up/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ap010307.github.io/portfolio/projects/robot_picking_up/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/AP010307/ELEC-291-Coin-Picking-Robot&#34;&gt;🔗 View on GitHub&lt;/a&gt;
 &lt;figure&gt;
-&lt;img loading="lazy" src="top_view.jpg"
-alt="Robot and Remote"/&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;top_view.jpg&#34;
+         alt=&#34;Robot and Remote&#34;/&gt; 
 &lt;/figure&gt;
 &lt;/p&gt;
-&lt;h1 id="overview"&gt;Overview&lt;/h1&gt;
+&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
 &lt;p&gt;I spearheaded a group of five people in an ELEC 291 project that utilises the EFM8LB1 and ATMega32P microcontrollers to create a robot that is able to pick up 20 coins.&lt;/p&gt;
-&lt;h1 id="introduction"&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;This project is the ultimatum of my ELEC 291 course, where my team was tasked with creating a robot that could pick up 20 coins. The robot was designed to be able to stay within a perimeter powered by AC signal while detecting and picking up coins using multipl solenoids.&lt;/p&gt;</description></item><item><title>RISC Machine</title><link>https://ap010307.github.io/portfolio/projects/risc/</link><pubDate>Fri, 14 Feb 2025 16:46:16 -0800</pubDate><guid>https://ap010307.github.io/portfolio/projects/risc/</guid><description>&lt;p&gt;&lt;a href="https://github.com/AP010307/CPEN_211_RSIC.git"&gt;🔗 View on GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;This project is the ultimatum of my ELEC 291 course, where my team was tasked with creating a robot that could pick up 20 coins. The robot was designed to be able to stay within a perimeter powered by AC signal while detecting and picking up coins using multipl solenoids.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>RISC Machine</title>
+      <link>https://ap010307.github.io/portfolio/projects/risc/</link>
+      <pubDate>Fri, 14 Feb 2025 16:46:16 -0800</pubDate>
+      <guid>https://ap010307.github.io/portfolio/projects/risc/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/AP010307/CPEN_211_RSIC.git&#34;&gt;🔗 View on GitHub&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;A SystemVerilog and ARM assembly project that creates a simple computer with basic arithmetics and memories.&lt;/p&gt;
-&lt;h1 id="overview"&gt;Overview&lt;/h1&gt;
-&lt;p&gt;This project is 3 labs combined into one project for CPEN 211, where we designed a reduced set instruction computer (RISC) machine using SystemVerilog and ARM assembly on a De1-SoC board. The RISC machine is capable of performing basic arithmetic operations and memory operations.&lt;/p&gt;
-&lt;h1 id="introduction"&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;The project was divided into two parts: the SystemVerilog part and the ARM assembly part. The SystemVerilog part was to design the RISC machine using a finite state machine (FSM) and the ARM assembly part was to write a program that runs on the RISC machine. The RISC machine was designed to have a 16-bit data bus, 16-bit address bus, 16-bit registers, and 16-bit memory. The machine was capable of performing basic arithmetic operations such as addition, subtraction, multiplication, and division. It was also capable of performing memory operations such as load and store.&lt;/p&gt;</description></item><item><title>UBC Supermileage Vehicle Simulation</title><link>https://ap010307.github.io/portfolio/projects/supermileage_sim/ubc_supermileage/</link><pubDate>Fri, 14 Feb 2025 16:46:16 -0800</pubDate><guid>https://ap010307.github.io/portfolio/projects/supermileage_sim/ubc_supermileage/</guid><description>&lt;p&gt;&lt;a href="%22https://github.com/AP010307/UBC-Supermileage-Vehicle-Simulation.git%22"&gt;🔗 View on GitHub&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id="overview"&gt;Overview&lt;/h1&gt;
+&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
+&lt;p&gt;This project is 3 labs combined into one project for CPEN 211, where we designed a  reduced set instruction computer (RISC) machine using SystemVerilog and ARM assembly on a De1-SoC board. The RISC machine is capable of performing basic arithmetic operations and memory operations.&lt;/p&gt;
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;The project was divided into two parts: the SystemVerilog part and the ARM assembly part. The SystemVerilog part was to design the RISC machine using a finite state machine (FSM) and the ARM assembly part was to write a program that runs on the RISC machine. The RISC machine was designed to have a 16-bit data bus, 16-bit address bus, 16-bit registers, and 16-bit memory. The machine was capable of performing basic arithmetic operations such as addition, subtraction, multiplication, and division. It was also capable of performing memory operations such as load and store.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>UBC Supermileage Vehicle Simulation</title>
+      <link>https://ap010307.github.io/portfolio/projects/supermileage_sim/ubc_supermileage/</link>
+      <pubDate>Fri, 14 Feb 2025 16:46:16 -0800</pubDate>
+      <guid>https://ap010307.github.io/portfolio/projects/supermileage_sim/ubc_supermileage/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;%22https://github.com/AP010307/UBC-Supermileage-Vehicle-Simulation.git%22&#34;&gt;🔗 View on GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
 &lt;p&gt;A MATLAB project looking for the best racing strategy for the UBC Supermileage team.&lt;/p&gt;
-&lt;h1 id="introduction"&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;In the motorsport world, the more time a driver spends on the track, the better their throttle control, braking point and racing line become. They also develop their own racing style that not only suits the car but also their racing philosophy. Two great examples are Max Verstappen late braking and preference for oversteering and late apex, and Lewis Hamilton&amp;rsquo;s smooth driving style and preference for early apex. Nevertheless, the driver&amp;rsquo;s racing style is not the only factor that affects the car&amp;rsquo;s performance. The car&amp;rsquo;s setup, the track&amp;rsquo;s condition, and the weather also play a significant role in determining the car&amp;rsquo;s performance and most importantly, the racing line.&lt;/p&gt;</description></item><item><title>Signal Generator</title><link>https://ap010307.github.io/portfolio/projects/sig_gen/</link><pubDate>Sat, 08 Mar 2025 16:46:16 -0800</pubDate><guid>https://ap010307.github.io/portfolio/projects/sig_gen/</guid><description>&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;strong&gt;Schematics&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;PCB_layout&lt;/strong&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;figure&gt;
-&lt;img loading="lazy" src="pcb_schematics.png"
-alt="Schematics"/&gt;
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;In the motorsport world, the more time a driver spends on the track, the better their throttle control, braking point and racing line become. They also develop their own racing style that not only suits the car but also their racing philosophy. Two great examples are Max Verstappen late braking and preference for oversteering and late apex, and Lewis Hamilton&amp;rsquo;s smooth driving style and preference for early apex. Nevertheless, the driver&amp;rsquo;s racing style is not the only factor that affects the car&amp;rsquo;s performance. The car&amp;rsquo;s setup, the track&amp;rsquo;s condition, and the weather also play a significant role in determining the car&amp;rsquo;s performance and most importantly, the racing line.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Signal Generator</title>
+      <link>https://ap010307.github.io/portfolio/projects/sig_gen/</link>
+      <pubDate>Sat, 08 Mar 2025 16:46:16 -0800</pubDate>
+      <guid>https://ap010307.github.io/portfolio/projects/sig_gen/</guid>
+      <description>&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Schematics&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;PCB_layout&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;pcb_schematics.png&#34;
+         alt=&#34;Schematics&#34;/&gt; 
 &lt;/figure&gt;
 &lt;/td&gt;
-&lt;td&gt;&lt;figure&gt;
-&lt;img loading="lazy" src="pcb_layout.png"
-alt="PCB layout"/&gt;
+          &lt;td&gt;&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;pcb_layout.png&#34;
+         alt=&#34;PCB layout&#34;/&gt; 
 &lt;/figure&gt;
 &lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;&lt;strong&gt;PCB_3D&lt;/strong&gt;&lt;br&gt;
 &lt;figure&gt;
-&lt;img loading="lazy" src="pcb_3d.png"
-alt="PCB 3D"/&gt;
-&lt;/figure&gt;
+      &lt;img loading=&#34;lazy&#34; src=&#34;pcb_3d.png&#34;
+           alt=&#34;PCB 3D&#34;/&gt; 
+  &lt;/figure&gt;
 &lt;/p&gt;
-&lt;h1 id="overview"&gt;Overview&lt;/h1&gt;
+&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
 &lt;p&gt;A signal generator PCB created using KiCad.&lt;/p&gt;
-&lt;h1 id="introduction"&gt;Introduction&lt;/h1&gt;
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;This project was my introduction to PCB design using KiCad. Provided with a schematics, I created a square-wave signal generator that its frequency and gain can be adjusted using multiple potentiometers.&lt;/p&gt;
-&lt;h1 id="objective"&gt;Objective&lt;/h1&gt;
-&lt;p&gt;The objective of this project was to learn how to design a PCB using KiCad and to understand the basic concepts of signal generation. The project also taught me to use different circuit testing equpments such as oscilloscope and multimeter. Lastly, I was introduced to SMD components, bill of materials and how to solder these components onto the PCB.&lt;/p&gt;</description></item></channel></rss>
+&lt;h1 id=&#34;objective&#34;&gt;Objective&lt;/h1&gt;
+&lt;p&gt;The objective of this project was to learn how to design a PCB using KiCad and to understand the basic concepts of signal generation. The project also taught me to use different circuit testing equpments such as oscilloscope and multimeter. Lastly, I was introduced to SMD components, bill of materials and how to solder these components onto the PCB.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
